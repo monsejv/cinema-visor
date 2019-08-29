@@ -1,174 +1,186 @@
 body {
   margin: 0;
-  background: #fff;
-}
+  background: #000; }
+  body p, body span, body h1 {
+    color: #fff;
+    font-family: 'Muli', sans-serif; }
 
 .header {
   background-image: url(../img/file-3.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 380px;
-}
-.header .navigation-bar {
-  color: #fff;
-  display: flex;
-}
-.header .navigation-bar .icon-cinema {
-  display: inline-flex;
-  width: 200px;
-  height: 50px;
-  background-image: url("../img/logo.png");
+  height: 380px; }
+  .header .navigation-bar {
+    color: #fff;
+    display: flex; }
+    .header .navigation-bar .icon-cinema {
+      display: inline-flex;
+      width: 200px;
+      height: 50px;
+      background-image: url("../img/logo.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    .header .navigation-bar ul {
+      list-style-type: none;
+      display: inline-flex;
+      width: 100%;
+      justify-content: flex-end; }
+      .header .navigation-bar ul li {
+        padding: 12px 20px;
+        font-family: 'Muli', sans-serif;
+        font-size: 12px; }
+        .header .navigation-bar ul li .icon-menu {
+          width: 50px;
+          height: 30px;
+          display: block;
+          background-image: url(../img/menu.png);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          margin-top: -5px; }
+  .header .container {
+    display: flex;
+    position: relative; }
+    .header .container .social-media {
+      position: absolute;
+      right: 0px;
+      display: grid; }
+      .header .container .social-media a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px 35px;
+        position: relative;
+        font-family: sans-serif;
+        font-size: 11px; }
+        .header .container .social-media a .tooltip {
+          position: absolute;
+          right: 58px;
+          width: 180px;
+          top: 0px;
+          display: none;
+          font-family: serif;
+          text-align: left;
+          font-size: 10px; }
+        .header .container .social-media a .share {
+          background-image: url("../img/icon-share.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: contain;
+          width: 14px;
+          height: 14px;
+          display: block; }
+        .header .container .social-media a.active {
+          background-image: url("../img/active-social.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center; }
+          .header .container .social-media a.active .tooltip {
+            display: block; }
+      .header .container .social-media p {
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Muli', sans-serif; }
+        .header .container .social-media p:first-of-type {
+          margin-top: 25px; }
+      .header .container .social-media .progress {
+        width: 2px;
+        height: 15px;
+        background: gray;
+        margin: auto;
+        border-radius: 5px; }
+        .header .container .social-media .progress .fill {
+          width: 2px;
+          height: 70%;
+          background: lightgray;
+          border-radius: 5px; }
+    .header .container .carousel {
+      color: #fff;
+      font-family: 'Muli', sans-serif;
+      margin: auto;
+      margin-top: 100px; }
+      .header .container .carousel p {
+        font-size: 38px;
+        letter-spacing: 10px;
+        margin-bottom: 5px; }
+      .header .container .carousel .progress-cart {
+        display: flex;
+        font-size: 8px; }
+        .header .container .carousel .progress-cart .left, .header .container .carousel .progress-cart .right {
+          width: 20px;
+          height: 20px;
+          display: block;
+          background-image: url("../img/left.png");
+          background-repeat: no-repeat;
+          background-size: 16px;
+          margin: 0px 8px; }
+        .header .container .carousel .progress-cart .right {
+          background-image: url("../img/right.png"); }
+        .header .container .carousel .progress-cart .number {
+          margin-top: 2px; }
+        .header .container .carousel .progress-cart .progress {
+          width: 80%;
+          height: 2px;
+          background: gray;
+          margin-left: 15px;
+          margin-right: 15px;
+          border-radius: 5px;
+          margin-top: 6px; }
+          .header .container .carousel .progress-cart .progress .full {
+            width: 30%;
+            height: 2px;
+            background: lightgray;
+            border-radius: 5px; }
+    .header .container .scroll {
+      color: #fff;
+      transform: rotate(90);
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      font-family: 'Muli', sans-serif;
+      position: absolute;
+      font-size: 8px;
+      bottom: 0; }
+      .header .container .scroll .icon-scroll {
+        margin-left: 7px;
+        font-size: 12px; }
+
+.modal .modal-lg {
+  max-width: 95% !important; }
+.modal .modal-content {
+  background: #000; }
+.modal .modal-header {
+  border-bottom: none;
+  justify-content: center; }
+.modal .modal-body .gray {
+  color: #626166;
+  background-image: url("../img/pizarra.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.header .navigation-bar ul {
-  list-style-type: none;
-  display: inline-flex;
+  background-position-x: right;
+  padding-right: 37px; }
+  .modal .modal-body .gray.second {
+    background-position: 53px 0px; }
+.modal .modal-body img {
   width: 100%;
-  justify-content: flex-end;
-}
-.header .navigation-bar ul li {
-  padding: 12px 20px;
-  font-family: "Muli", sans-serif;
-  font-size: 12px;
-}
-.header .navigation-bar ul li .icon-menu {
-  width: 50px;
-  height: 30px;
-  display: block;
-  background-image: url(../img/menu.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: -5px;
-}
-.header .container {
-  display: flex;
-  position: relative;
-}
-.header .container .social-media {
-  position: absolute;
-  right: 0px;
-  display: grid;
-}
-.header .container .social-media a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 35px;
-  position: relative;
-  font-family: sans-serif;
-  font-size: 11px;
-}
-.header .container .social-media a .tooltip {
-  position: absolute;
-  right: 58px;
-  width: 180px;
-  top: 0px;
-  display: none;
-  font-family: serif;
-  text-align: left;
-  font-size: 10px;
-}
-.header .container .social-media a .share {
-  background-image: url("../img/icon-share.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 14px;
-  height: 14px;
-  display: block;
-}
-.header .container .social-media a.active {
-  background-image: url("../img/active-social.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.header .container .social-media a.active .tooltip {
-  display: block;
-}
-.header .container .social-media p {
-  color: #fff;
-  font-size: 10px;
-  text-align: center;
-  font-family: "Muli", sans-serif;
-}
-.header .container .social-media p:first-of-type {
-  margin-top: 25px;
-}
-.header .container .social-media .progress {
-  width: 2px;
-  height: 15px;
-  background: gray;
-  margin: auto;
-  border-radius: 5px;
-}
-.header .container .social-media .progress .fill {
-  width: 2px;
-  height: 70%;
-  background: lightgray;
-  border-radius: 5px;
-}
-.header .container .carousel {
-  color: #fff;
-  font-family: "Muli", sans-serif;
-  margin: auto;
-  margin-top: 100px;
-}
-.header .container .carousel p {
-  font-size: 38px;
-  letter-spacing: 10px;
-  margin-bottom: 5px;
-}
-.header .container .carousel .progress-cart {
-  display: flex;
-  font-size: 8px;
-}
-.header .container .carousel .progress-cart .left, .header .container .carousel .progress-cart .right {
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-image: url("../img/left.png");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  margin: 0px 8px;
-}
-.header .container .carousel .progress-cart .right {
-  background-image: url("../img/right.png");
-}
-.header .container .carousel .progress-cart .number {
-  margin-top: 2px;
-}
-.header .container .carousel .progress-cart .progress {
-  width: 80%;
-  height: 2px;
-  background: gray;
-  margin-left: 15px;
-  margin-right: 15px;
-  border-radius: 5px;
-  margin-top: 6px;
-}
-.header .container .carousel .progress-cart .progress .full {
-  width: 30%;
-  height: 2px;
-  background: lightgray;
-  border-radius: 5px;
-}
-.header .container .scroll {
-  color: #fff;
-  transform: rotate(90);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  font-family: "Muli", sans-serif;
-  position: absolute;
-  font-size: 8px;
-  bottom: 0;
-}
-.header .container .scroll .icon-scroll {
-  margin-left: 7px;
-  font-size: 12px;
-}
+  margin-bottom: 20px; }
+.modal .modal-body .early-years {
+  margin-left: 40px; }
+.modal .modal-footer {
+  justify-content: center;
+  border-top: none; }
+  .modal .modal-footer .btn-dark {
+    color: #fff;
+    background-color: #000;
+    border-color: #000; }
+  .modal .modal-footer:hover, .modal .modal-footer :focus, .modal .modal-footer :active {
+    color: #fff;
+    background-color: #000;
+    border-color: #000; }
+
+.about-us {
+  height: 70vh; }
+  .about-us .content h1 {
+    letter-spacing: 5px; }
 
 /*# sourceMappingURL=main.css.map */
