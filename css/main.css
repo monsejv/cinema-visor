@@ -203,6 +203,7 @@ body p, body span, body h1 {
 }
 .social-media a:hover .tooltip {
   display: block;
+  opacity: 1;
 }
 .social-media p {
   color: #fff;
