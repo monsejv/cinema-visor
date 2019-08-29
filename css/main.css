@@ -13,7 +13,7 @@ body p, body span, body h1 {
 }
 .header .bd-example {
   position: absolute;
-  z-index: -1;
+  z-index: 1;
 }
 .header .bd-example .carousel-control-prev {
   left: 30%;
@@ -90,10 +90,16 @@ body p, body span, body h1 {
 .header .bd-example .progress-cart .progress .full.seven {
   width: 100% !important;
 }
+.header .navigation-bar {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
 .header .container-fluid {
   display: flex;
-  position: relative;
+  position: absolute;
   height: 50%;
+  top: 20%;
 }
 
 .b-middle {
@@ -134,7 +140,7 @@ body p, body span, body h1 {
 .cartelera .wrapper-card {
   display: flex;
 }
-.cartelera .wrapper-card .image-card {
+.cartelera .wrapper-card .card-image {
   width: 22%;
   height: 22%;
   background: red;
