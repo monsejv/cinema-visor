@@ -1,161 +1,145 @@
 body {
-  margin: 0;
-  background: #fff;
+  margin: 0 !important;
+  background-color: black !important;
 }
 
 .header {
-  background-image: url(../img/file-3.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100%;
   width: 100%;
-  height: 380px;
+  height: 670px;
 }
-.header .navigation-bar {
-  color: #fff;
-  display: flex;
-}
-.header .navigation-bar .icon-cinema {
-  display: inline-flex;
-  width: 200px;
-  height: 50px;
-  background-image: url("../img/logo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.header .navigation-bar ul {
-  list-style-type: none;
-  display: inline-flex;
-  width: 100%;
-  justify-content: flex-end;
-}
-.header .navigation-bar ul li {
-  padding: 12px 20px;
-  font-family: "Muli", sans-serif;
-  font-size: 12px;
-}
-.header .navigation-bar ul li .icon-menu {
-  width: 50px;
-  height: 30px;
-  display: block;
-  background-image: url(../img/menu.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: -5px;
-}
-.header .container {
-  display: flex;
-  position: relative;
-}
-.header .container .social-media {
+.header .bd-example {
   position: absolute;
-  right: 0px;
-  display: grid;
+  z-index: -1;
 }
-.header .container .social-media a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 35px;
-  position: relative;
-  font-family: sans-serif;
-  font-size: 11px;
+.header .bd-example .carousel-control-prev {
+  left: 30%;
+  z-index: 9999999;
 }
-.header .container .social-media a .tooltip {
+.header .bd-example .carousel-control-prev span {
+  background-image: url("../img/left.png");
+  margin-top: 70px;
+}
+.header .bd-example .carousel-control-next {
+  right: 26%;
+  z-index: 999999;
+}
+.header .bd-example .carousel-control-next span {
+  background-image: url("../img/right.png");
+  margin-top: 70px;
+}
+.header .bd-example .carousel-caption {
+  right: 0;
+  bottom: 38.5%;
+  left: 0;
+}
+.header .bd-example .carousel-caption p {
   position: absolute;
-  right: 58px;
-  width: 180px;
-  top: 0px;
-  display: none;
-  font-family: serif;
-  text-align: left;
-  font-size: 10px;
-}
-.header .container .social-media a .share {
-  background-image: url("../img/icon-share.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 14px;
-  height: 14px;
-  display: block;
-}
-.header .container .social-media a.active {
-  background-image: url("../img/active-social.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.header .container .social-media a.active .tooltip {
-  display: block;
-}
-.header .container .social-media p {
-  color: #fff;
-  font-size: 10px;
-  text-align: center;
-  font-family: "Muli", sans-serif;
-}
-.header .container .social-media p:first-of-type {
-  margin-top: 25px;
-}
-.header .container .social-media .progress {
-  width: 2px;
-  height: 15px;
-  background: gray;
-  margin: auto;
-  border-radius: 5px;
-}
-.header .container .social-media .progress .fill {
-  width: 2px;
-  height: 70%;
-  background: lightgray;
-  border-radius: 5px;
-}
-.header .container .carousel {
-  color: #fff;
-  font-family: "Muli", sans-serif;
-  margin: auto;
-  margin-top: 100px;
-}
-.header .container .carousel p {
+  bottom: 40px;
+  left: 37.5%;
   font-size: 38px;
   letter-spacing: 10px;
   margin-bottom: 5px;
+  font-family: "Muli", sans-serif;
 }
-.header .container .carousel .progress-cart {
+.header .bd-example .progress-cart {
   display: flex;
   font-size: 8px;
+  width: 29%;
+  margin: auto;
+  top: 0px;
+  position: absolute;
+  left: 39%;
 }
-.header .container .carousel .progress-cart .left, .header .container .carousel .progress-cart .right {
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-image: url("../img/left.png");
-  background-repeat: no-repeat;
-  background-size: 16px;
-  margin: 0px 8px;
-}
-.header .container .carousel .progress-cart .right {
-  background-image: url("../img/right.png");
-}
-.header .container .carousel .progress-cart .number {
+.header .bd-example .progress-cart .number {
   margin-top: 2px;
 }
-.header .container .carousel .progress-cart .progress {
+.header .bd-example .progress-cart .progress {
   width: 80%;
   height: 2px;
   background: gray;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 5px;
   margin-top: 6px;
 }
-.header .container .carousel .progress-cart .progress .full {
-  width: 30%;
+.header .bd-example .progress-cart .progress .full {
+  width: 14.28%;
   height: 2px;
   background: lightgray;
   border-radius: 5px;
 }
-.header .container .scroll {
+.header .bd-example .progress-cart .progress .full.two {
+  width: 28.56% !important;
+}
+.header .bd-example .progress-cart .progress .full.three {
+  width: 42.84% !important;
+}
+.header .bd-example .progress-cart .progress .full.four {
+  width: 57.12% !important;
+}
+.header .bd-example .progress-cart .progress .full.five {
+  width: 71.4% !important;
+}
+.header .bd-example .progress-cart .progress .full.six {
+  width: 85.68% !important;
+}
+.header .bd-example .progress-cart .progress .full.seven {
+  width: 100% !important;
+}
+.header .container-fluid {
+  display: flex;
+  position: relative;
+  height: 50%;
+}
+
+.b-middle {
+  bottom: 60% !important;
+}
+
+.enfoque {
+  position: relative;
+  padding: 30px 0px;
+}
+.enfoque .row-enfoque .enfoque-image {
+  width: 107%;
+  height: 100%;
+  margin-left: -50px;
+}
+.enfoque .row-enfoque p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 320px;
+  margin-left: -25px;
+  color: white;
+  line-height: 0.8;
+}
+.enfoque .row-enfoque p.go {
+  font-size: 50px;
+  top: 420px;
+}
+.enfoque .row-enfoque p.title {
+  font-size: 110px;
+}
+
+.cartelera {
+  position: relative;
+  padding: 30px 0px;
+}
+.cartelera .wrapper-card {
+  display: flex;
+}
+.cartelera .wrapper-card .image-card {
+  width: 22%;
+  height: 22%;
+  background: red;
+}
+
+.top-20 {
+  top: 20% !important;
+}
+
+.scroll {
   color: #fff;
   transform: rotate(90);
   -webkit-transform: rotate(90deg);
@@ -166,9 +150,113 @@ body {
   font-size: 8px;
   bottom: 0;
 }
-.header .container .scroll .icon-scroll {
+.scroll .icon-scroll {
   margin-left: 7px;
   font-size: 12px;
+}
+
+.social-media {
+  position: absolute;
+  right: 0px;
+  display: grid;
+}
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 35px;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 11px;
+}
+.social-media a .tooltip {
+  position: absolute;
+  right: 58px;
+  width: 180px;
+  top: 0px;
+  display: none;
+  font-family: serif;
+  text-align: left;
+  font-size: 10px;
+}
+.social-media a .share {
+  background-image: url("../img/icon-share.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+.social-media a.active {
+  background-image: url("../img/AZULTWITTER.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-media a.active .tooltip {
+  display: block;
+}
+.social-media p {
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  font-family: "Muli", sans-serif;
+}
+.social-media p:first-of-type {
+  margin-top: 25px;
+}
+.social-media .progress {
+  width: 2px;
+  height: 30px;
+  background: gray;
+  margin: auto;
+  border-radius: 5px;
+}
+.social-media .progress .fill {
+  width: 2px;
+  height: 70%;
+  background: lightgray;
+  border-radius: 5px;
+}
+
+.navigation-bar {
+  color: #fff;
+  display: flex;
+}
+.navigation-bar .icon-cinema {
+  display: inline-flex;
+  width: 200px;
+  height: 100px;
+  background-image: url(../img/logo226.svg);
+  background-repeat: no-repeat;
+  background-position: 40px 20px;
+  background-size: 70px;
+}
+.navigation-bar ul {
+  list-style-type: none;
+  display: inline-flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.navigation-bar ul li {
+  padding: 30px 20px;
+  font-family: "Muli", sans-serif;
+  font-size: 12px;
+}
+.navigation-bar ul li .icon-menu {
+  width: 50px;
+  height: 35px;
+  display: block;
+  background-image: url(../img/barras_del_menu.svg);
+  background-repeat: no-repeat;
+  margin-top: -6px;
+  background-position: bottom;
+}
+.navigation-bar ul.ocult-all li {
+  display: none;
+}
+.navigation-bar ul.ocult-all li:last-of-type {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */
