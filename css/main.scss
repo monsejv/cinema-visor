@@ -13,7 +13,7 @@ body{
 	height: 670px;
 	.bd-example{
 		position: absolute;
-		z-index: -1;
+		z-index: 1;
 		.carousel-control-prev{
 			left: 30%;
 			z-index: 9999999;
@@ -91,10 +91,16 @@ body{
 			}
 		}
 	}
+	.navigation-bar{
+		position: absolute;
+		width: 100%;
+		z-index: 3;
+	}
 	.container-fluid{
 		display: flex;
-		position: relative;
-		height: 50%;
+    	position: absolute;
+    	height: 50%;
+    	top: 20%;
 	}
 }
 
@@ -105,25 +111,24 @@ body{
 	position: relative;
 	padding: 30px 0px;
 	.row-enfoque{
+		padding: 0;
 		.enfoque-image{
-			width: 107%;
-			height: 100%;
-			margin-left: -50px;
+			width: 100%;
 		}
 		p{
 			position: absolute;
 			text-align: center;
 			width: 100%;
-			top: 320px;
-			margin-left: -25px;
+			top: 37%;
 			color: white;
 			line-height: 0.8;
 			&.go{
 				font-size: 50px;
-				top: 420px;
+				top: 53%;
+				cursor: pointer;
 			}
 			&.title{
-				font-size: 110px;
+				font-size: 100px;
 			}
 		}
 	}
@@ -135,7 +140,7 @@ body{
 	padding: 30px 0px;
 	.wrapper-card{
 		display: flex;
-		.image-card{
+		.card-image{
 			width: 22%;
 			height: 22%;
 			background: red;
@@ -159,6 +164,7 @@ body{
 	position: absolute;
 	font-size: 8px;
 	bottom: 0;
+	cursor: pointer;
 	.icon-scroll{
 		margin-left: 7px;
 		font-size: 12px;
@@ -195,13 +201,16 @@ body{
 			height: 14px;
 			display: block;
 		}
-		&.active{
+		&:hover{
 			background-image: url('../img/AZULTWITTER.svg');
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
+			color: white;
+			text-decoration: none;
 			.tooltip{
 				display: block;
+				opacity: 1;
 			}
 		}
 	}
@@ -250,6 +259,10 @@ body{
 			padding: 30px 20px;
 			font-family: 'Muli', sans-serif;
 			font-size: 12px;
+			visibility: visible;
+			transition: visibility 1s, opacity 2s cubic-bezier(0.4, 0, 0.2, 1);;
+			opacity: 1;
+			cursor: pointer;
 			.icon-menu{
 				width: 50px;
 				height: 35px;
@@ -262,9 +275,12 @@ body{
 		}
 		&.ocult-all{
 			li{
-				display: none;
+				visibility: hidden;
+				opacity: 0;
+				transition: visibility 1s, opacity 2s cubic-bezier(0.4, 0, 0.2, 1);;
 				&:last-of-type{
-					display: block;
+					visibility: visible;
+  					opacity: 1;
 				}
 			}
 		}
@@ -299,6 +315,19 @@ body{
 		}
 		.early-years{
 			margin-left: 40px;
+		}
+		.space{
+			padding: 15px 10px;
+		}
+		.ef-img-modal{
+			position: relative;
+			.title{
+				position: absolute;
+				top: 33%;
+				font-size: 90px;
+				text-align: center;
+				width: 100%
+			}
 		}
 	}
 	.modal-footer{

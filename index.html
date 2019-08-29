@@ -9,9 +9,6 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -72,13 +69,71 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-dark" data-dismiss="modal">
-						< GO BACK</button>
+						 GO BACK</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	</div>
-	<div class="header">
+	<!--Modal enfoque-->
+	<div class="modal fade bd-example-modal-lg" id="enfoque-modal" tabindex="-1" role="dialog"
+		aria-labelledby="about-us-modal" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="ef-img-modal">
+							<img src="img/enfoque.png"  alt="">
+							<p class="title">NUESTRO ENFOQUE</p>
+						</div>
+						<div class="row space">
+							<div class="col-sm-6">
+								<h1 class="title-enfoque">NUESTRO ENFOQUE</h1>
+								<h3 class="gray second">03/</h3>
+							</div>
+							<div class="col-sm-6">
+								<p class="desc">Mantener siempre al mejor talento, tanto joven como reconocido,
+									para producir contenido audaz, vanguardista e inteligente, alineado siempre a las
+									tendencias mundiañes de consumo de contenido.
+								</p>
+							</div>
+						</div>
+						<div class="row space">
+								<div class="col-sm-6">
+									<h1 class="title-enfoque">MISIÓN</h1>
+									<h3 class="gray second">04/</h3>
+								</div>
+								<div class="col-sm-6">
+									<p class="desc">Informa y califica Fortalecer mediante la experiencia de nuestros
+										socios, un perfil de producción constantes y diversificado, encontrando un equilibrio
+										entre la producción de cine comercial, cine de autor y series para diversos
+										canales de streaming.
+									</p>
+								</div>
+							</div>
+							<div class="row space">
+									<div class="col-sm-6">
+										<h1 class="title-enfoque">VISIÓN</h1>
+										<h3 class="gray second">05/</h3>
+									</div>
+									<div class="col-sm-6">
+										<p class="desc">Corto y retador: Ser la casa productora de mayor prestigio
+											a nivel nacional e internacional.
+										</p>
+									</div>
+								</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-dismiss="modal">
+						 GO BACK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--Header-->
+	<div class="header primary-element">
 		<div class="bd-example">
 			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
@@ -182,53 +237,53 @@
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				</a>
+				<div class="container-fluid">
+						<div class="social-media">
+							<a href="#"><span class="share"></span></a>
+							<a href="#">FB
+								<div class="tooltip">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+									magnam nobis.
+								</div>
+							</a>
+							<a href="#" class="active">TW
+								<div class="tooltip">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+									magnam nobis.
+								</div>
+							</a>
+							<a href="#">MA
+								<div class="tooltip">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+									magnam nobis.
+								</div>
+							</a>
+							<p>1</p>
+							<div class="progress">
+								<div class="fill"></div>
+							</div>
+							<p class="mt-3">7</p>
+						</div>
+						<div class="scroll" onclick="doScroll(this)">SCRROLL<span class="icon-scroll">></span></div>
+					</div>
 			</div>
 		</div>
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
 			<ul>
-				<li class="link">NOSOTROS</li>
-				<li class="link">ENFOQUE</li>
-				<li class="link">CARTELERA</li>
-				<li class="link">SERVICIOS</li>
-				<li class="link">DEMO REEL</li>
-				<li class="link">SOCIOS</li>
-				<li class="link">CONTACTO</li>
-				<li class="link"><span class="icon-menu"></span></li>
+				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
+				<li class="link" onclick="goSection('.enfoque')"><span ></span> ENFOQUE</li>
+				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
+				<li class="link" onclick="goSection('.servicios')">SERVICIOS</li>
+				<li class="link" onclick="goSection('.demo')">DEMO REEL</li>
+				<li class="link" onclick="goSection('.socios')">SOCIOS</li>
+				<li class="link" onclick="goSection('.contacto')">CONTACTO</li>
+				<li class="link"><span class="icon-menu" onclick="toggleMenu(this)"></span></li>
 			</ul>
-		</div>
-		<div class="container-fluid">
-			<div class="social-media">
-				<a href="#"><span class="share"></span></a>
-				<a href="#">FB
-					<div class="tooltip">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
-						magnam nobis.
-					</div>
-				</a>
-				<a href="#" class="active">TW
-					<div class="tooltip">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
-						magnam nobis.
-					</div>
-				</a>
-				<a href="#">MA
-					<div class="tooltip">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
-						magnam nobis.
-					</div>
-				</a>
-				<p>1</p>
-				<div class="progress">
-					<div class="fill"></div>
-				</div>
-				<p class="mt-3">7</p>
-			</div>
-			<div class="scroll">SCRROLL<span class="icon-scroll">></span></div>
 		</div>
 	</div>
 	<!--Nosotros-->
-	<div class="about-us d-flex align-items-center">
+	<div class="about-us d-flex align-items-center primary-element">
 		<div class="content">
 			<h1 class="text-center">NOSOTROS:</h1>
 			<p class="mr-3 ml-3">Cinema226 es una de las casas productoras de contenido audiovisual más
@@ -242,29 +297,28 @@
 		</div>
 	</div>
 	<!--Enfoque-->
-	<div class="enfoque">
+	<div class="enfoque primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
 			<ul class="ocult-all">
-				<li class="link">NOSOTROS</li>
-				<li class="link">ENFOQUE</li>
-				<li class="link">CARTELERA</li>
-				<li class="link">SERVICIOS</li>
-				<li class="link">DEMO REEL</li>
-				<li class="link">SOCIOS</li>
-				<li class="link">CONTACTO</li>
-				<li class="link"><span class="icon-menu"></span></li>
+					<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
+					<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
+					<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
+					<li class="link" onclick="goSection('.servicios')">SERVICIOS</li>
+					<li class="link" onclick="goSection('.demo')">DEMO REEL</li>
+					<li class="link" onclick="goSection('.socios')">SOCIOS</li>
+					<li class="link" onclick="goSection('.contacto')">CONTACTO</li>
+				<li class="link"><span class="icon-menu" onclick="toggleMenu(this)"></span></li>
 			</ul>
 		</div>
 		<div class="row">
 			<div class="col-1">
-
-				<div class="scroll b-middle ml-3">SCRROLL<span class="icon-scroll">></span></div>
+				<div class="scroll b-middle ml-3"  onclick="doScroll(this)">SCRROLL<span class="icon-scroll">></span></div>
 			</div>
 			<div class="col-10 row-enfoque">
 				<img src="img/enfoque.png" class="enfoque-image" alt="">
 				<p class="title">NUESTRO ENFOQUE</p>
-				<p class="go">IR ></p>
+				<p class="go" data-toggle="modal" data-target="#enfoque-modal">IR ></p>
 			</div>
 			<div class="col-1">
 				<div class="social-media mr-3 top-20">
@@ -297,23 +351,23 @@
 		</div>
 	</div>
 	<!--Cartelera-->
-	<div class="cartelera">
+	<div class="cartelera primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
 			<ul class="ocult-all">
-				<li class="link">NOSOTROS</li>
-				<li class="link">ENFOQUE</li>
-				<li class="link">CARTELERA</li>
-				<li class="link">SERVICIOS</li>
-				<li class="link">DEMO REEL</li>
-				<li class="link">SOCIOS</li>
-				<li class="link">CONTACTO</li>
-				<li class="link"><span class="icon-menu"></span></li>
+					<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
+					<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
+					<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
+					<li class="link" onclick="goSection('.servicios')">SERVICIOS</li>
+					<li class="link" onclick="goSection('.demo')">DEMO REEL</li>
+					<li class="link" onclick="goSection('.socios')">SOCIOS</li>
+					<li class="link" onclick="goSection('.contacto')">CONTACTO</li>
+				<li class="link"><span class="icon-menu" onclick="toggleMenu(this)"></span></li>
 			</ul>
 		</div>
 		<div class="row">
 			<div class="col-1">
-				<div class="scroll b-middle ml-3">SCRROLL<span class="icon-scroll">></span></div>
+				<div class="scroll b-middle ml-3"  onclick="doScroll(this)">SCRROLL<span class="icon-scroll">></span></div>
 			</div>
 			<div class="col-10 wrapper-card">
 				<div class="card-image">
@@ -371,16 +425,14 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
 		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 		crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
 		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 </body>
 
 </html>
