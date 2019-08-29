@@ -6,6 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ejercicio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,6 +15,69 @@
 </head>
 
 <body>
+	<div class="modal fade bd-example-modal-lg" id="about-us-modal" tabindex="-1" role="dialog"
+		aria-labelledby="about-us-modal" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="modal-title">THE STORY BEGINS</p>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<img src="img/about-us.png" alt="">
+								<div class="early-years">
+									<h1>PRIMEROS AÑOS</h1>
+									<h3 class="gray second">02/</h3>
+									<p class="text-justify">Se unen en un sueño común, siete casas productoras con la
+										idea de hacer frente a las necesidades
+										del mercado audiovisual actual, cada una de ellas con enfoques y trayectorias
+										diferentes,
+										pero complementarias que, al juntarse <span class="font-weight-bold">crearon un
+											grupo fuerte
+											y competitivo para el mercado audiovisual.</span>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<h1 class="text-right mt-5">NOSOTROS</h1>
+								<h3 class="text-right gray">01/</h3>
+								<p class="text-justify">
+									<span class="font-weight-bold">Cinema226 </span>es una de las casas productoras de
+									contenido audiovisual más prometedoras de México.<br><br>
+									Tiene hoy en desarrollo una veinten de películas y media de docena de series, con un
+									sensible equilibrio entre la <span class="font-weight-bold">
+										visión comercial, el perfil alternativo y el sello autorial que demanda el
+										dinámico mercado audiovisual.</span><br><br>
+									Nuestra historia empieza en <span class="font-weight-bold">2013</span>, cuando
+									<span class="font-weight-bold">(Sam Guillen) (pequeño suceso de la inspiración para
+										crear la empresa) </span>
+									para crear lo que hoy en día conocomemos como<br>
+									<span class="font-weight-bold">Cinema226</span>.<br><br>
+									Basamos nuestro nombre en el estímulo fiscal que rescató a la industria
+									cinematográfica:<br>
+									<span class="font-weight-bold">(Art. 226 de la Ley del Impuesto sobre la Renta.
+										)</span>
+								</p>
+								<div>
+									<p>2017</p>
+									<p>2018</p>
+									<p>2019</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark" data-dismiss="modal">
+						< GO BACK</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 	<div class="header">
 		<div class="bd-example">
 			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -162,6 +227,20 @@
 			<div class="scroll">SCRROLL<span class="icon-scroll">></span></div>
 		</div>
 	</div>
+	<!--Nosotros-->
+	<div class="about-us d-flex align-items-center">
+		<div class="content">
+			<h1 class="text-center">NOSOTROS:</h1>
+			<p class="mr-3 ml-3">Cinema226 es una de las casas productoras de contenido audiovisual más
+				prometedoras de México.
+				Tiene hoy en desarrollo una veintena de películas y media docena de series, con un sensible
+				equilibrio entre la visión comercial, el perfil alternativo y el sello autoral que demanda
+				el
+				dinámico mercado audiovisual. <span class="font-weight-bold" data-toggle="modal"
+					data-target="#about-us-modal"> MÁS ></span>
+			</p>
+		</div>
+	</div>
 	<!--Enfoque-->
 	<div class="enfoque">
 		<div class="navigation-bar">
@@ -292,14 +371,15 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 		crossorigin="anonymous"></script>
 </body>
 

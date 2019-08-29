@@ -1,6 +1,10 @@
 body {
   margin: 0 !important;
-  background-color: black !important;
+  background: #000 !important;
+}
+body p, body span, body h1 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
 }
 
 .header {
@@ -257,6 +261,55 @@ body {
 }
 .navigation-bar ul.ocult-all li:last-of-type {
   display: block;
+}
+
+.modal .modal-lg {
+  max-width: 95% !important;
+}
+.modal .modal-content {
+  background: #000;
+}
+.modal .modal-header {
+  border-bottom: none;
+  justify-content: center;
+}
+.modal .modal-body .gray {
+  color: #626166;
+  background-image: url("../img/pizarra.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  padding-right: 37px;
+}
+.modal .modal-body .gray.second {
+  background-position: 53px 0px;
+}
+.modal .modal-body img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modal .modal-body .early-years {
+  margin-left: 40px;
+}
+.modal .modal-footer {
+  justify-content: center;
+  border-top: none;
+}
+.modal .modal-footer .btn-dark {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.modal .modal-footer:hover, .modal .modal-footer :focus, .modal .modal-footer :active {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+
+.about-us {
+  height: 70vh;
+}
+.about-us .content h1 {
+  letter-spacing: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
