@@ -340,9 +340,10 @@ body{
 			background-image: url('../img/AZULTWITTER.svg');
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-position: center;
+			background-position: 20px 1px;
 			color: white;
 			text-decoration: none;
+			text-align: center;
 			.tooltip{
 				display: block;
 				opacity: 1;
