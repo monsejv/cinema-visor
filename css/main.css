@@ -138,7 +138,9 @@ body p, body span, body h1 {
   padding: 30px 0px;
 }
 .cartelera .wrapper-card {
-  display: flex;
+  display: flow-root;
+  position: relative;
+  width: 100%;
 }
 .cartelera .wrapper-card .card-image {
   width: 22%;
