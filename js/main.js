@@ -29,3 +29,71 @@ function appendParticles(){
 }
 
 appendParticles()
+
+var arrayMovies = [{
+    indice1:{
+        cover: 'img/corajecartel.jpg',
+        sipnosis: 'PROXIMAMENTE',
+        youtube: ''
+    },
+    indice:{
+        cover: 'img/',
+        sipnosis: '',
+        youtube: ''
+    },
+    indice3:{
+        cover: 'img/feralcartel.jpg',
+        sipnosis: 'En 1986, un sacerdotem Juan Felipe de Jesús (Héctor Illanes) documenta en docenas de videocassettes el duro proceso para reincorporar a tres niños salvajes a la sociedad oaxaqueña.' +
+            'Sus buenas intenciones son interrumpidas por un trágico incendio que marca el destino de Juan Felipe y de los tres pequeños. Hoy en día, varias incógnitas rodean el caso, y los pobladores que vivieron el suceso guardar un misterio silcencio. (FILMAFFINITY).',
+        youtube: ''
+    },
+    indice4:{
+        cover: 'img/malacopacartel.jpg',
+        sipnosis: 'Un hombre tímido y con pocas habilidades sociales se enfrenta a un gran reto en su trabajo cuando le piden que lidere una importante presentación, pero su mundo está a punto de cambiar gracias a la aparición de su alter ego alcoholizado.',
+        youtube: ''
+    },
+    indice5:{
+        cover: 'img/influenciacartel.jpg',
+        sipnosis: 'Leonora una chica de 16 años, vive con su abuela en un cuarto de azotea aislada del mundo exterior desde hace 10 años, pues está convencida de que tiene el don de propiciar la muerte de gente a las que le ve el rostro. El mágico mundo que ha creado para sobrevivir'+
+        ' el encierro se cimbra cuando su abuela muere y conoce a Brandon, un urbano principe a quien oculta de la mafia del barrio y por quien conocerá el Amor y será liberada de su fatídico don, no sin pagar un alto precio.',
+        youtube: ''
+    },
+    indice6:{
+        cover: 'img/elbailedelagacelacartel.jpg',
+        sipnosis: 'El sueño de Eugenio es ganar un trofeo, pero nunca lo logró en el fútbol. A sus 72 años encuentra una última posibilidad en un concurso de bailes tropicales. Cuando puerde a su pareja, su única opción de ganar será bailar con otro hombre, enfrentándose a sus propios'+
+        ' prejuicios y a los de su familia. Ahora cambiará el balón por el salón.',
+        youtube: ''
+    },
+    indice7:{
+        cover: 'img/alcaerlanochecartel.jpg',
+        sipnosis: 'Basado en hechos reales. Ángel, un universitario que no gusta de meterse en problemasm termina envuelto con sus vecinos en el linchamiento de un tipo al que los gritos de auxilio de una adolescente, acusan de haberla violado. Jorge, un policía ministerial, vuelve al'+
+        ' trabajo tras tiempo de ausencia por una pérdida personal. Él y un veterano policía, tras atender la emergencia, acaban llevándose a un lugar desolado a Ángel y a uno de sus vecinos, junto al hombre que lincharon. Ahí, los presionan a terminar lo que empezaron.',
+        youtube: ''
+    },
+    indice8:{
+        cover: 'img/traicioncartel.jpg',
+        sipnosis: 'Las fracturas familiares entre Félix y su hija Misela, forjadas incluso antes de su nacimiento. El temperamento impetuoso de ambos provoca que los rencores del pasado y su travesía personal a lo largo de atropelladas vidas moldeé una enfermiza y latente sospecha mutua, '+
+        'la cual explota en una tarde nublada mientras lod dos dan un paseo por un terreno roco.',
+        youtube: ''
+    },
+    indice9:{
+        cover: 'img/lavenganzadejairocartel.jpg',
+        sipnosis: 'Jairo José Panilla Téllez (Cali, Colombia, 1944) es el padre del terror el suspenso y la ciencia ficción en Colombia, director entre otras, de películas como 27 horas con la muerte o Funeral Sinestro, que fueron un ícono y un éxito de taquilla por allá por los años 70 y 80 '+
+        'Fue el primero en introducir efectos especiales en una película colombiana y ahora, con más de 70 años, está empeñado en sacar adelante su última película: la primera en 3D por fuera de la animación. Llevará por título El espiritu de la muerte. Él mismo, en su casa, se encarga de todos estos efectos, '+
+        'trabajándolos, muchas veces de forma astesanal en el proceso de edición. Con entrevistas y fragmentos de películas, se arma este entrañable documental que sigue los pasos de quien, sin duda, es un personake en la historia del cine colombiano, cuya labor bien merece este homenaje.',
+        youtube: ''
+    },
+}]
+
+
+function fillModal(indice){
+    $(".title-cartel, .trailer").removeClass("d-none")
+    $(".img-cartel").attr("src", arrayMovies[0][indice].cover)
+    $(".sipnosis-cartel").text(arrayMovies[0][indice].sipnosis)
+    $(".youtube").attr("src", arrayMovies[0][indice].youtube)
+
+    if(indice == 'indice1'){
+        $(".title-cartel, .trailer").addClass("d-none")
+    }
+    $("#cartel-modal").modal("show")
+}

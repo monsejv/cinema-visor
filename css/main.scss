@@ -14,12 +14,15 @@ body{
 	.bd-example{
 		position: absolute;
 		z-index: 1;
+		img{
+			height: 700px;
+		}
 		.carousel-control-prev{
 			left: 30%;
 			z-index: 9999999;
 			span{
 				background-image: url('../img/left.png');
-				margin-top: 70px;
+				margin-top: 90px;
 			}
 		}
 		.carousel-control-next{
@@ -27,7 +30,7 @@ body{
 			z-index: 999999;
 			span{
 				background-image: url('../img/right.png');
-				margin-top: 70px;
+				margin-top: 90px;
 			}
 		}
 		.carousel-caption{
@@ -70,19 +73,19 @@ body{
 					background: lightgray;
 					border-radius: 5px;
 					&.two{
-						width: 28.56%!important;
+						width: 16.6%!important;
 					}
 					&.three{
-						width: 42.84%!important;
+						width: 33.2%!important;
 					}
 					&.four{
-						width: 57.12%!important;
+						width: 49.8%!important;
 					}
 					&.five{
-						width: 71.40%!important;
+						width: 83%!important;
 					}
 					&.six{
-						width: 85.68%!important;
+						width: 100%!important;
 					}
 					&.seven{
 						width: 100%!important;
@@ -596,3 +599,33 @@ body{
         background: #0e161f;
     }
 }
+
+.parpadea{
+	animation-name: parpadeo;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+  
+	-webkit-animation-name:parpadeo;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	50% { opacity: 0.0; }
+	 100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+	0% { opacity: 1.0; }
+	 50% { opacity: 0.0; }
+	100% { opacity: 1.0; }
+  }
