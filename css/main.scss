@@ -355,3 +355,37 @@ body{
 	}
 }
 
+.demo{
+	height: 140vh;
+	h1{
+		margin: 50px 0px;
+		letter-spacing: 5px;
+	}
+	.wrapper-text{
+		padding: 20px 0px;
+	}
+	.back-gray{
+		background-color: #0e0e0e;
+	}
+}
+
+.socios{
+	height: 100vh;
+	h1{
+		margin: 50px 0px;
+		letter-spacing: 5px;
+	}
+	#carouselSocios{
+		.carousel-inner{
+			.carousel-item{
+				img{
+					max-width: 33.3%;
+				}
+				.carousel-caption{
+					right: 6%;
+					left: 6%;
+				}
+			}
+		}
+	}
+}
