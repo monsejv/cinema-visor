@@ -118,10 +118,13 @@ body{
 		p{
 			position: absolute;
 			text-align: center;
-			width: 100%;
-			top: 37%;
 			color: white;
 			line-height: 0.8;
+			top: 33%;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
 			&.go{
 				font-size: 50px;
 				top: 53%;
@@ -138,16 +141,145 @@ body{
 .cartelera{
 	position: relative;
 	padding: 30px 0px;
+	h1{
+		margin-bottom: 40px;
+	}
 	.wrapper-card{
 		display: flow-root;
 		position: relative;
 		width: 100%;
+		padding: 0;
 		.card-image{
-			width: 22%;
-			height: 22%;
-			background: red;
+			width: 30%;
+			display: inline-grid;
+			margin: 2.1%;
+			height: 315px;
+			position: relative;
+			&:nth-of-type(3n){
+				margin-right: 0px;
+			}
+			&:nth-of-type(4n), &:first-of-type{
+				margin-left: 0px;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			p{
+				position: absolute;
+				top: 40%;
+				width: 100%;
+				text-align: center;
+				margin-bottom: 5px;
+				font-size: 25px;
+				cursor: pointer;
+			}
+			.separator{
+				width: 30%;
+				height: 2px;
+				background-color: white;
+				position: absolute;
+				position: absolute;
+				top: 10px;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+			}
 		}
 	}
+}
+
+.servicios{
+	h1{
+		margin-bottom: 40px;
+	}
+	#carousel-services{
+		width: 80%;
+		margin: auto;
+		position: absolute;
+		top: 42%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 99;
+		.services{
+			width: 180px;
+    		height: 200px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			display: block;
+			&.serv-1{
+				background-image: url('../img/serv-1.png');
+				background-size: 180px;
+				float: left;
+				margin-right: 15px;
+			}
+			&.serv-2{
+				background-image: url('../img/serv-2.png');
+				float: right;
+				margin-left: 15px;
+			}
+		}
+		.title{
+			margin-top: 60px;
+			margin-bottom: 32px;
+		}
+		.description{
+			font-size: 10px;
+			.flecha{
+				cursor: pointer;
+			}
+		}
+		.carousel-indicators{
+			li{
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+			}
+		}
+		.figure-l{
+			width: 70%;
+			height: 80px;
+			position: absolute;
+			z-index: -1;
+			&.b-top{
+				border-top: 2px solid white;
+				border-right: 2px solid white;
+				right: 0px;
+				top: 100px;
+			}
+			&.b-bottom{
+				border-bottom: 2px solid white;
+				border-left: 2px solid white;
+				bottom: 100px;
+				left: 0px;
+			}
+		}
+		.carousel-control-prev{
+			width: 50px;
+			height: 50px;
+			top: 85.5%;
+			position: absolute;
+			left: 44%;
+		}
+		.carousel-control-next{
+			width: 50px;
+			height: 50px;
+			top: 85.5%;
+			position: absolute;
+			right: 44%;
+		}
+		.carousel-control-next-icon, .carousel-control-prev-icon{
+			width: 12px;
+			height: 12px;
+		}
+	}
+}
+
+.servicios{
+	position: relative;
+	padding: 30px 0px;
 }
 
 .top-20{
@@ -177,6 +309,7 @@ body{
 	position: absolute;
 	right: 0px;
 	display: grid;
+	z-index: 0;
 	a{
 		color: #fff;
 		text-decoration: none;
@@ -357,3 +490,37 @@ body{
 	}
 }
 
+//css particulas
+.animation{
+	position: relative;
+	width: 100%;
+	height: 400px;
+	.particle-container{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+}
+.particle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+@for $i from 1 through 1000 {
+    @keyframes particle-animation-#{$i} {
+        100% {
+            transform: translate3d((random(100) * 1vw), (random(70) * 1vh), (random(100) * 1px));
+        }
+    }
+    
+    .particle:nth-child(#{$i}){
+        animation: particle-animation-#{$i} 60s infinite;
+        $size: 14px;
+        opacity: 1;
+        height: $size;
+        width: $size;
+        animation-delay: -$i * .2s;
+        transform: translate3d((random(100) * 1vw), (random(70) * 1vh), (random(100) * 1px));
+        background: #0e161f;
+    }
+}
