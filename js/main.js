@@ -20,3 +20,12 @@ function doScroll (id){
         scrollTop: $(nextSection).offset().top
     }, 'slow')
 }
+
+function appendParticles(){
+    var particles = "<div class='particle'></div>"
+    for(var i=0; i<100; i++){
+        $("#particle-container").append(particles)
+    }
+}
+
+appendParticles()
