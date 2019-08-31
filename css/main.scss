@@ -23,6 +23,7 @@ body{
 		.carousel-control-prev{
 			left: 30%;
 			z-index: 9999999;
+			display: none;
 			span{
 				background-image: url('../img/left.png');
 				margin-top: 90px;
@@ -31,6 +32,7 @@ body{
 		.carousel-control-next{
 			right: 26%;
 			z-index: 999999;
+			display: none;
 			span{
 				background-image: url('../img/right.png');
 				margin-top: 90px;
@@ -42,25 +44,36 @@ body{
 			left: 0;
 			p{
 				position: absolute;
-				bottom: 40px;
-				left: 37.5%;
-				font-size: 38px;
-				letter-spacing: 10px;
+				bottom: 90px;
+				left: 100px;
+				font-size: 24px;
+				letter-spacing: 8px;
 				margin-bottom: 5px;
-				font-family: 'Muli', sans-serif;
-				
+				font-family: "Muli", sans-serif;
+				&.movie{
+					bottom: 40px;
+					display: block;
+					letter-spacing: 0;
+					font-size: 20px;
+				}
+				&.amazon{
+					bottom: 15px;
+					display: block;
+					letter-spacing: 0;
+					font-size: 20px;
+				}
 			}
 		}
 		.progress-cart{
 			display: flex;
-			font-size: 8px;
+			font-size: 10px;
 			width: 29%;
 			margin: auto;
-			top: 0px;
+			top: -55px;
 			position: absolute;
-			left: 39%;
+			left: 100px;
 			.number{
-				margin-top: 2px;
+				margin-top: 0px;
 			}
 			.progress{
 				width: 80%;
@@ -108,6 +121,9 @@ body{
     	height: 50%;
     	top: 15%;
 	}
+	.scroll{
+		bottom: 50%;
+	}
 }
 
 .b-middle{
@@ -118,22 +134,29 @@ body{
 	padding: 30px 0px;
 	.row-enfoque{
 		padding: 0;
+		background-image: url('../img/nuestro\ enfoque.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 560px;
+		transform-style: preserve-3d;
+		transform: translate3d(0px, 56px, 0px);
 		.enfoque-image{
 			width: 100%;
 		}
 		p{
-			position: absolute;
+			-webkit-font-smoothing: antialiased !important;
+			position: relative;
 			text-align: center;
 			color: white;
 			line-height: 0.8;
-			top: 33%;
-			left: 0;
-			right: 0;
-			bottom: 0;
 			margin: auto;
+			margin-top: 19%;
+			transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+			transform-origin: 50% 50% 0px;
+			transition: top 5s;
 			&.go{
 				font-size: 50px;
-				top: 53%;
+				margin-top: 30px;
 				cursor: pointer;
 			}
 			&.title{
@@ -330,12 +353,12 @@ body{
 		.tooltip{
 			position: absolute;
 			right: 58px;
-			width: 180px;
-			top: 0px;
+			width: 153px;
+			top: 14px;
 			display: none;
 			font-family: serif;
 			text-align: left;
-			font-size: 10px;
+			font-size: 12px;
 		}
 		.share{
 			background-image: url('../img/icon-share.png');
@@ -486,12 +509,20 @@ body{
 		background-color: #000;
 		border-color: #000;
 	}
-	#about-us-modal{
-		.modal-content{
-			.scroll{
-				&.final{
-					transform: rotate(-90deg);
-				}
+}
+#about-us-modal{
+	.modal-content{
+		.scroll{
+			&.final{
+				transform: rotate(-90deg);
+			}
+		}
+		.space{
+			.move-left{
+				margin-left: -100%;
+			}
+			.move-right{
+				margin-right: 100%;
 			}
 		}
 	}
@@ -720,7 +751,7 @@ body{
 		}
 		.sinopsis-cartel{
 			font-size: 22px;
-			line-height: 1.7;
+			line-height: 1.5;
 			&.proximamente{
 				font-size: 60px;
 				margin-top: 25%;
@@ -731,6 +762,18 @@ body{
 			position: absolute;
 			bottom: 0;
 			left: 40px;
+			width: 90%;
+			.youtube{
+				width: 40px;
+				height: 40px;
+				background-image: url('../img/play.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+				position: absolute;
+				right: 0;
+				bottom: 10px;
+				cursor: pointer;
+			}
 		}
 	}
 	}
