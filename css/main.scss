@@ -10,13 +10,12 @@ body{
 //Estilos de header
 .header{
     width: 100%;
-	height: 670px;
+	min-height: 1050px;
+	position: relative;
 	.bd-example{
 		position: absolute;
 		z-index: 1;
-		img{
-			height: 700px;
-		}
+		width: 100%;
 		.carousel-control-prev{
 			left: 30%;
 			z-index: 9999999;
@@ -103,7 +102,7 @@ body{
 		display: flex;
     	position: absolute;
     	height: 50%;
-    	top: 20%;
+    	top: 15%;
 	}
 }
 
@@ -158,6 +157,9 @@ body{
 			margin: 2.1%;
 			height: 315px;
 			position: relative;
+			&:hover{
+				opacity: 0.4;
+			}
 			&:nth-of-type(3n){
 				margin-right: 0px;
 			}
@@ -167,6 +169,7 @@ body{
 			img{
 				width: 100%;
 				height: 100%;
+				cursor: pointer;
 			}
 			p{
 				position: absolute;
@@ -299,8 +302,8 @@ body{
 	-o-transform: rotate(90deg);
 	font-family: 'Muli', sans-serif;
 	position: absolute;
-	font-size: 8px;
-	bottom: 0;
+	font-size: 12px;
+    bottom: 20%;
 	cursor: pointer;
 	.icon-scroll{
 		margin-left: 7px;
@@ -486,11 +489,12 @@ body{
 }
 
 .about-us{
-	height: 70vh;
-	.content{
-		h1{
-			letter-spacing: 5px;
-		}
+	width: 87%;
+	margin: auto;
+	padding: 90px 0px;
+	h1{
+		letter-spacing: 8px;
+		margin-bottom: 30px;
 	}
 }
 
@@ -628,4 +632,41 @@ body{
 	0% { opacity: 1.0; }
 	 50% { opacity: 0.0; }
 	100% { opacity: 1.0; }
+  }
+
+  #cartel-modal{
+	  .modal-body{
+		padding: 0;
+		.wrapper-text{
+			padding: 180px 30px 30px 30px;
+			h1{
+				margin-bottom: 40px;
+			}
+			.sinopsis-cartel{
+				font-size: 22px;
+				line-height: 1.7;
+				&.proximamente{
+					font-size: 60px;
+    				margin-top: 25%;
+				}
+			}
+			.trailer{
+				font-size: 22px;
+				position: absolute;
+				bottom: 0;
+				left: 40px;
+			}
+		}
+	  }
+  }
+
+  #enfoque-modal{
+	  padding-right: 0px!important;
+	  width: 100%;
+	  .scroll{
+		  left: -75px;
+	  }
+	  .social-media{
+		  right: -85px;
+	  }
   }

@@ -83,9 +83,32 @@
 			<div class="modal-content">
 				<div class="modal-body">
 					<div class="container-fluid">
-						<div class="ef-img-modal">
+						<div class="ef-img-modal primary-element">
 							<img src="img/nuestro enfoque.jpg" alt="">
-							<!--<p class="title">NUESTRO ENFOQUE</p>-->
+							<div class="scroll parpadea b-middle ml-3" onclick="doScrollModal(this, '#enfoque-modal')">SCRROLL<span
+								class="icon-scroll">></span>
+						</div>
+							<div class="social-media mr-3 top-20">
+								<a href="#"><span class="share"></span></a>
+								<a href="#">FB
+									<div class="tooltip">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+										magnam nobis.
+									</div>
+								</a>
+								<a href="#">TW
+									<div class="tooltip">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+										magnam nobis.
+									</div>
+								</a>
+								<a href="#">I N
+									<div class="tooltip">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente
+										magnam nobis.
+									</div>
+								</a>
+							</div>
 						</div>
 						<div class="row space">
 							<div class="col-sm-6">
@@ -134,20 +157,20 @@
 		</div>
 	</div>
 	</div>
-	<!--Modal enfoque-->
+	<!--Modal cartelera-->
 	<div class="modal fade bd-example-modal-lg" id="cartel-modal" tabindex="-1" role="dialog"
 		aria-labelledby="about-us-modal" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-5">
-								<img src="" class="w-100 img-cartel" alt="">
-							</div>
-							<div class="col-7 text-center">
-								<p class="title-cartel">SIPNOSIS</p>
-								<p class="sipnosis-cartel"></p>
+					<div class="row">
+						<div class="col-5">
+							<img src="" class="w-100 img-cartel" alt="">
+						</div>
+						<div class="col-7 text-center">
+							<div class="wrapper-text">
+								<h1 class="title-cartel">SINOPSIS</h1>
+								<p class="sinopsis-cartel"></p>
 								<div class="trailer d-inline-flex">
 									<p class="f-left">Te invitamos a ver el tráiler ></p>
 									<a href="" class="youtube"></a>
@@ -303,8 +326,8 @@
 		</div>
 	</div>
 	<!--Nosotros-->
-	<div class="about-us d-flex align-items-center primary-element">
-		<div class="content">
+	<div class="about-us  primary-element">
+		<div class="d-grid align-items-center">
 			<h1 class="text-center">NOSOTROS:</h1>
 			<p class="mr-3 ml-3">Cinema226 es una de las casas productoras de contenido audiovisual más
 				prometedoras de México.
@@ -331,14 +354,14 @@
 				<li class="link"><span class="icon-menu" onclick="toggleMenu(this)"></span></li>
 			</ul>
 		</div>
-		<div class="row">
+		<div class="row mt-4">
 			<div class="col-1">
 				<div class="scroll parpadea b-middle ml-3" onclick="doScroll(this)">SCRROLL<span
 						class="icon-scroll">></span>
 				</div>
 			</div>
 			<div class="col-10 row-enfoque">
-				<img src="img/enfoque.png" class="enfoque-image" alt="">
+				<img src="img/nuestro enfoque.jpg" class="enfoque-image" alt="">
 				<p class="title">NUESTRO ENFOQUE</p>
 				<p class="go" data-toggle="modal" data-target="#enfoque-modal">IR ></p>
 			</div>
@@ -396,8 +419,8 @@
 			</div>
 			<div class="col-10 wrapper-card">
 				<div class="card-image" onclick="fillModal('indice1')">
-					<img src="img/coraje.jpg" alt="">
-					<p class="title-movie">CORAJE</p>
+					<img src="img/01traicion.jpg" alt="">
+					<p class="title-movie">TRAICIÓN</p>
 					<div class="separator"></div>
 				</div>
 				<div class="card-image" onclick="fillModal('indice2')">
@@ -426,13 +449,13 @@
 					<div class="separator"></div>
 				</div>
 				<div class="card-image" onclick="fillModal('indice7')">
-					<img src="img/alcaerlanoche.jpg" alt="">
-					<p class="title-movie">AL CAER LA NOCHE</p>
+					<img src="img/coraje.jpg" alt="">
+					<p class="title-movie">CORAJE</p>
 					<div class="separator"></div>
 				</div>
 				<div class="card-image" onclick="fillModal('indice8')">
-					<img src="img/01traicion.jpg" alt="">
-					<p class="title-movie">TRAICIÓN</p>
+					<img src="img/alcaerlanoche.jpg" alt="">
+					<p class="title-movie">AL CAER LA NOCHE</p>
 					<div class="separator"></div>
 				</div>
 				<div class="card-image" onclick="fillModal('indice9')">
