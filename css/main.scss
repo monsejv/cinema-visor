@@ -1,10 +1,14 @@
 body{
 	margin: 0!important;
 	background: #000!important;
-	& p, span, h1 {
+	& p, span, h1, h3, h5 {
 		color: #fff;
 		font-family: 'Muli', sans-serif;
 	}
+}
+
+.cursor-pointer{
+	cursor: pointer;
 }
 
 //Estilos de header
@@ -461,7 +465,7 @@ body{
 		.space{
 			padding: 15px 10px;
 		}
-		.ef-img-modal{
+		.img-modal{
 			position: relative;
 			.title{
 				position: absolute;
@@ -472,18 +476,23 @@ body{
 			}
 		}
 	}
-	.modal-footer{
-		justify-content: center;
-		border-top: none;
-		.btn-dark {
-			color: #fff;
-			background-color: #000;
-			border-color: #000;
-		}
-		&:hover, :focus, :active{
-			color: #fff;
-			background-color: #000;
-			border-color: #000;
+	.btn-dark {
+		color: #fff;
+		background-color: #000;
+		border-color: #000;
+	}
+	&:hover, :focus, :active{
+		color: #fff;
+		background-color: #000;
+		border-color: #000;
+	}
+	#about-us-modal{
+		.modal-content{
+			.scroll{
+				&.final{
+					transform: rotate(-90deg);
+				}
+			}
 		}
 	}
 }
@@ -564,9 +573,76 @@ body{
 }
 
 .contacto{
-	height: 93vh;
 	background: url("../img/footer.png");
 	background-repeat: no-repeat;
+	height: 93vh;
+	.scroll{
+		transform: rotate(-90deg);
+	}
+	.follow-us{
+		margin-top: 5%;
+		ul{
+			li{
+				color: #fff;
+				list-style: none;
+			}
+		}
+		.created-by{
+			width: 100%;
+			height: 25px;
+			background-image: url(../img/CREATIVESPACELOGO.png);
+			background-repeat: no-repeat;
+			background-size: 210px;
+			background-position: 56%;
+			padding-left: 37%;
+			padding-top: 6px;
+			margin-top: 3%
+		}
+	}
+	.form-group{
+		input{
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid;
+			border-bottom-color: rgba(255,255,255, 0.5);
+			color: #fff;
+			width: 90%;
+		}
+		input::placeholder{
+			color: #fff;
+		}
+		input:focus{
+			outline: none !important;
+			border-bottom-color: #fff;
+		}
+	}
+	.btn-submit{
+		background-color: transparent;
+		border: none;
+		padding: 0px;
+		color: #fff;
+	}
+	.email{
+		color: #fff;
+	}
+	.title{
+		margin-bottom: 10%;
+	}
+	.news-letter{
+		margin-top: 15%;
+		margin-bottom: 5%;
+	}
+	.redes{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20px;
+		img{
+			margin: 0px 10px;
+		}
+	}
+	.social-media{
+		bottom: 0;
+	}
 }
 
 //css particulas
@@ -614,7 +690,7 @@ body{
 	-webkit-animation-duration: 1s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
-  }
+}
   
   @-moz-keyframes parpadeo{  
 	0% { opacity: 1.0; }
@@ -634,39 +710,86 @@ body{
 	100% { opacity: 1.0; }
   }
 
-  #cartel-modal{
-	  .modal-body{
-		padding: 0;
-		.wrapper-text{
-			padding: 180px 30px 30px 30px;
-			h1{
-				margin-bottom: 40px;
-			}
-			.sinopsis-cartel{
-				font-size: 22px;
-				line-height: 1.7;
-				&.proximamente{
-					font-size: 60px;
-    				margin-top: 25%;
-				}
-			}
-			.trailer{
-				font-size: 22px;
-				position: absolute;
-				bottom: 0;
-				left: 40px;
+#cartel-modal{
+	.modal-body{
+	padding: 0;
+	.wrapper-text{
+		padding: 180px 30px 30px 30px;
+		h1{
+			margin-bottom: 40px;
+		}
+		.sinopsis-cartel{
+			font-size: 22px;
+			line-height: 1.7;
+			&.proximamente{
+				font-size: 60px;
+				margin-top: 25%;
 			}
 		}
-	  }
-  }
+		.trailer{
+			font-size: 22px;
+			position: absolute;
+			bottom: 0;
+			left: 40px;
+		}
+	}
+	}
+}
 
-  #enfoque-modal{
-	  padding-right: 0px!important;
-	  width: 100%;
-	  .scroll{
-		  left: -75px;
-	  }
-	  .social-media{
-		  right: -85px;
-	  }
-  }
+#enfoque-modal, #about-us-modal{
+	padding-right: 0px!important;
+	width: 100%;
+	.scroll{
+		left: -75px;
+		&.final{
+		transform: rotate(-90deg);
+		}
+	}
+	.social-media{
+		right: -85px;
+	}
+}
+
+#about-us-modal{
+	.story{
+		height: 93vh;
+		align-items: center;
+		display: flex;
+	}
+	.back{
+		height: 63vh;
+		.btn-dark{
+			margin-top: 13%;
+		}
+	}
+	.section-years{
+		height: 70vh;
+		.social-media{
+			top: 0;
+		}
+	}
+	.team{
+		h1{
+			margin-bottom: 10%;
+		}
+	}
+	.years{
+		p{
+			font-size: 200px;
+			opacity: 0.5;
+			position: absolute;
+		}
+		p:nth-child(1){
+			top: -30%;
+			left: 7%;
+		}
+		p:nth-child(2){
+			top: -7%;
+			left: 10%;
+		}
+		p:nth-child(3){
+			top: 16%;
+			left: 13%;
+		}
+	}
+}
