@@ -122,3 +122,15 @@ function showModal(){
     }, 800)
     
 }
+
+function closeModalEfect(){
+    $("#about-us-modal").modal("hide")
+    setTimeout(function(){
+        $("#about-us-modal").find(".move-left").animate({
+            marginLeft: '-100%'
+        }, 'slow')
+        $("#about-us-modal").find(".move-right").animate({
+            marginRight: '100%'
+        }, 'slow')
+    }, 800)
+}

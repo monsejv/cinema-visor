@@ -1,11 +1,12 @@
-@font-face { font-family: D-DIN-Bold; src: url(fonts/D-DIN-Bold.otf);}
-@font-face { font-family: D-DIN-Italic; src: url(fonts/D-DIN-Italic.otf);}
-@font-face { font-family: D-DIN; src: url(fonts/D-DIN.otf);}
-@font-face { font-family: D-DINCondensed-Bold; src: url(fonts/D-DINCondensed-Bold.otf);}
-@font-face { font-family: D-DINCondensed; src: url(fonts/D-DINCondensed.otf);}
-@font-face { font-family: D-DINExp-Bold; src: url(fonts/D-DINExp-Bold.otf);}
-@font-face { font-family: D-DINExp-Italic; src: url(fonts/D-DINExp-Italic.otf);}
-@font-face { font-family: D-DINExp; src: url(fonts/D-DINExp.otf);}
+@font-face { font-family: D-DIN-Bold; src: url(../fonts/D-DIN-Bold.otf);}
+@font-face { font-family: D-DIN-Italic; src: url(../fonts/D-DIN-Italic.otf);}
+@font-face { font-family: D-DIN; src: url(../fonts/D-DIN.otf);}
+@font-face { font-family: D-DINCondensed-Bold; src: url(../fonts/D-DINCondensed-Bold.otf);}
+@font-face { font-family: D-DINCondensed; src: url(../fonts/D-DINCondensed.otf);}
+@font-face { font-family: D-DINExp-Bold; src: url(../fonts/D-DINExp-Bold.otf);}
+@font-face { font-family: D-DINExp-Italic; src: url(../fonts/D-DINExp-Italic.otf);}
+@font-face { font-family: D-DINExp; src: url(../fonts/D-DINExp.otf);}
+
 
 
 body{
@@ -619,14 +620,19 @@ body{
 }
 
 .contacto{
-	background: url("../img/footer.png");
-	background-repeat: no-repeat;
-	height: 93vh;
+	padding: 0;
+	.contacto-image{
+		background: url(../img/footer.png);
+		background-repeat: no-repeat;
+		height: 100%;
+		background-size: 100%;
+	}
 	.scroll{
 		transform: rotate(-90deg);
 	}
 	.follow-us{
-		margin-top: 5%;
+		margin-top: 60px;
+		margin-bottom: 40px;
 		ul{
 			li{
 				color: #fff;
@@ -642,7 +648,8 @@ body{
 			background-position: 56%;
 			padding-left: 37%;
 			padding-top: 6px;
-			margin-top: 3%
+			margin-top: 30px;
+			margin-bottom: 0px;
 		}
 	}
 	.form-group{
