@@ -148,6 +148,7 @@ body{
 .enfoque{
 	position: relative;
 	padding: 30px 0px;
+	font-size: 'D-DIN-Bold';
 	.row-enfoque{
 		padding: 0;
 		background-image: url('../img/nuestro\ enfoque.jpg');
@@ -247,7 +248,7 @@ body{
 		width: 80%;
 		margin: auto;
 		position: absolute;
-		top: 42%;
+		top: 30%;
 		left: 0;
 		right: 0;
 		bottom: 0;
@@ -281,6 +282,7 @@ body{
 			}
 		}
 		.carousel-indicators{
+			bottom: 30%;
 			li{
 				width: 8px;
 				height: 8px;
@@ -308,14 +310,14 @@ body{
 		.carousel-control-prev{
 			width: 50px;
 			height: 50px;
-			top: 85.5%;
+			top: 63%;
 			position: absolute;
 			left: 44%;
 		}
 		.carousel-control-next{
 			width: 50px;
 			height: 50px;
-			top: 85.5%;
+			top: 63%;
 			position: absolute;
 			right: 44%;
 		}
@@ -416,9 +418,27 @@ body{
 		border-radius: 5px;
 		.fill{
 			width: 2px;
-			height: 70%;
+			height: 14.28%;
 			background: lightgray;
 			border-radius: 5px;
+			&.filled-2{
+				height: 28.56%;
+			}
+			&.filled-3{
+				height: 42.84%;
+			}
+			&.filled-4{
+				height: 57.12%;
+			}
+			&.filled-5{
+				height: 71.4%;
+			}
+			&.filled-6{
+				height: 85.68%;
+			}
+			&.filled-7{
+				height: 100%;
+			}
 		}
 	}
 }
@@ -526,8 +546,16 @@ body{
 		border-color: #000;
 	}
 }
+
 #about-us-modal{
 	.modal-content{
+		.icon-us{
+			width: 100%;
+			height: 150px;
+			background-image: url('../img/thestorybegins.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+		}
 		.scroll{
 			&.final{
 				transform: rotate(-90deg);
@@ -597,63 +625,53 @@ body{
 					}
 					.logo-socio{
 						width: 100%;
+						height: 120px;
 						display: block;
 						background-repeat: no-repeat;
 						background-position: center;
 						&.creative{
-							background-image: url(../img/CREATIVESPACELOGO.png);
-							height: 63px;
-							background-size: 275px;
+							background-image: url('../img/CREATIVESPACELOGO.svg');
+							background-size: cover;
 						}
 						&.apapacho{
-							background-image: url(../img/socios/apapachoflimslogo.png);
-							height: 100%;
-							background-size: 56px;
+							background-image: url('../img/socios/apapachoflimslogo.svg');
+							background-size: 860px;
 						}
 						&.bmmaso{
-							background-image: url(../img/socios/BMM&ASO.png);
-							height: 72px;
-							background-size: 92px;
+							background-image: url('../img/socios/BMM&ASO.svg');
+							background-size: 500px;
 						}
 						&.chilito{
-							background-image: url(../img/socios/EL-CHILITO-ENMASCARADO.png);
-							height: 73px;
-							background-size: 92px;
+							background-image: url('../img/socios/EL\ CHILITO\ ENMASCARADO.svg');
+							background-size: 730px;
 						}
 						&.tomatito{
-							background-image: url(../img/socios/eltomatitoenmasdcarado.png);
-							height: 170px;
-							background-size: 76px;
+							background-image: url('../img/socios/eltomatitoenmasdcarado.svg');
+							background-size: 730px;
 						}
 						&.framerate{
-							background-image: url(../img/socios/framerate.png);
-							height: 61px;
-							background-size: 61px;
+							background-image: url('../img/socios/framerate.svg');
+							background-size: 730px;
 						}
 						&.escuincla{
-							background-image: url(../img/socios/laescuinclaysupiojitologo.png);
-							height: 66px;
-							background-size: 45px;
+							background-image: url('../img/socios/laescuinclaysupiojitologo.svg');
+							background-size: 500px;
 						}
 						&.magofilms{
-							background-image: url(../img/socios/magofilmslogo.png);
-							height: 12px;
-							background-size: 56px;
+							background-image: url('../img/socios/magofilmslogo.svg');
+							background-size: 1300px;
 						}
 						&.mago{
-							background-image: url(../img/socios/magoproductions.png);
-							height: 12px;
-							background-size: 54px;
+							background-image: url('../img/socios/magoproductions.svg');
+							background-size: 1300px;
 						}
 						&.pcmnormal{
-							background-image: url(../img/socios/pcmnormal.png);
-							height: 58px;
-							background-size: 50px;
+							background-image: url('../img/socios/pcmnormal.svg');
+							background-size: 640px;
 						}
 						&.pcmpost{
-							background-image: url(../img/socios/pcmpost.png);
-							height: 430px;
-							background-size: 430px;
+							background-image: url('../img/socios/pcmpost.svg');
+							background-size: 734px;
 						}
 					}
 					&:hover, &.active{
@@ -689,6 +707,7 @@ body{
 			li{
 				color: #fff;
 				list-style: none;
+				cursor: pointer;
 			}
 		}
 		.created-by{
@@ -741,8 +760,9 @@ body{
 		display: flex;
 		justify-content: center;
 		margin-bottom: 20px;
-		img{
+		a{
 			margin: 0px 10px;
+			cursor: pointer;
 		}
 	}
 	.social-media{
@@ -754,7 +774,7 @@ body{
 .animation{
 	position: relative;
 	width: 100%;
-	height: 400px;
+	height: 640px;
 	.particle-container{
 		position: absolute;
 		width: 100%;
@@ -901,6 +921,7 @@ body{
 			font-size: 200px;
 			opacity: 0.5;
 			position: absolute;
+			font-family: 'D-DINCondensed-Bold';
 		}
 		p:nth-child(1){
 			top: -30%;
