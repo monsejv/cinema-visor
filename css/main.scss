@@ -464,19 +464,25 @@ body{
 		li{
 			padding: 30px 20px;
 			//font-family: 'Muli', sans-serif;
-			font-size: 12px;
+			font-size: 22px;
 			visibility: visible;
 			transition: visibility 1s, opacity 2s cubic-bezier(0.4, 0, 0.2, 1);;
 			opacity: 1;
 			cursor: pointer;
+			color: black;
 			.icon-menu{
-				width: 50px;
-				height: 35px;
+				width: 80px;
+				height: 45px;
 				display: block;
 				background-image: url(../img/barras_del_menu.svg);
 				background-repeat: no-repeat;
 				margin-top: -6px;
 				background-position: bottom;
+			}
+		}
+		&.principal{
+			li{
+				color: white;
 			}
 		}
 		&.ocult-all{
@@ -586,7 +592,7 @@ body{
 }
 
 .demo{
-	height: 140vh;
+	height: 100vh;
 	h1{
 		margin: 50px 0px;
 		letter-spacing: 5px;
@@ -596,6 +602,9 @@ body{
 	}
 	.back-gray{
 		background-color: #0e0e0e;
+	}
+	.social-media{
+		top: 0;
 	}
 }
 
@@ -612,6 +621,7 @@ body{
 			margin: auto;
 			.carousel-item{
 				.banner-socios{
+					cursor: pointer;
 					img{
 						max-width: 33.3%;
 						margin: auto;
@@ -632,6 +642,7 @@ body{
 						display: block;
 						background-repeat: no-repeat;
 						background-position: center;
+						background-size: contain;
 						&.creative{
 							background-image: url('../img/CREATIVESPACELOGO.svg');
 							background-size: cover;
@@ -664,7 +675,7 @@ body{
 							background-image: url('../img/socios/magofilmslogo.svg');
 							background-size: 1300px;
 						}
-						&.mago{
+						&.framebyframe{
 							background-image: url('../img/socios/magoproductions.svg');
 							background-size: 1300px;
 						}
@@ -838,15 +849,25 @@ body{
 	100% { opacity: 1.0; }
   }
 
-#cartel-modal{
+#cartel-modal, #socios-modal{
 	.modal-body{
 		padding: 0;
 		.wrapper-text{
 			padding: 180px 30px 30px 30px;
+			&.pad-30{
+				padding: 30px 30px 30px 30px;
+			}
+			a:hover{
+				color: #fff!important;
+			}
 			h1{
 				margin-bottom: 40px;
 			}
-			.sinopsis-cartel{
+			.title-socios{
+				font-size: 22px;
+				margin-bottom: 30px;
+			}
+			.sinopsis-cartel, .desc-socios{
 				font-size: 22px;
 				line-height: 1.5;
 				&.proximamente{
@@ -854,7 +875,12 @@ body{
 					margin-top: 25%;
 				}
 			}
-			.trailer{
+			.desc-socios{
+				&.proximamente{
+					margin-top: 5%;
+				}
+			}
+			.trailer, .link{
 				font-size: 22px;
 				position: absolute;
 				bottom: 0;
@@ -939,4 +965,16 @@ body{
 			left: 13%;
 		}
 	}
+}
+
+a:hover{
+	color: #fff;
+}
+
+.texto-borde{
+	text-shadow:
+		-1px -1px 0 #fff,  
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
 }

@@ -134,3 +134,97 @@ function closeModalEfect(){
         }, 'slow')
     }, 800)
 }
+
+var arraySocios = [{
+    apapacho:{
+        name: 'APAPACHO FILMS',
+        imgCover: 'img/socios/Apapacho_blanco.png',
+        description: 'Es una compañía productora de cine constituida en la Ciudad de México. Joven y con aire fresco, busca poco a poco un sitio entre las empresas más destacadas del rubro cinematográfico en México y también en el resto del mundo.</br>'+
+                    'Contamos con el apoyo de un equipo de productores, directores y  artistas en México y en Europa con una gran trayectoria y con muchos proyectos audiovisuales premiados.</br>  Buscamos crear una plataforma más eficiente para la co producción de películas de ficción, documentales y animación entre los países europeos y México.',
+        link: 'http://apapachofilms.com/'
+    },
+    bmmaso:{
+        name: 'BMM & ASOCIADOS',
+        imgCover: 'img/socios/bmmyasociados.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    creative:{
+        name: 'CREATIVE SPACE',
+        imgCover: 'img/socios/creativespace.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    chilito:{
+        name: 'EL CHILITO ENMASCARADO',
+        imgCover: 'img/socios/elchilitoenmascarado.png',
+        description: 'Se constituyó legalmente de ley el 2 de agosto de 2013 por una bandita con más de 10 años de fletarse en la producción de cine independiente, series y comerciales.</be>'+
+                      'Nuestra promesa (y sí no que pierda el América) es hacer  productos chulos de bonitos, que la gente quiera ir a ver al cine, y podamos recuperar nuestra marmaja para poder seguir haciendo pelis que le gusten desde tu hermano más pequeño (el pilón) hasta la amargada de tu suegra.',
+        link: 'http://www.elchilitoenmascarado.mx/'
+    },
+    tomatito:{
+        name: 'EL TOMATITO ENMASCARADO',
+        imgCover: 'img/socios/eltomatitioenmascarado.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    framerate:{
+        name: 'FRAME RATE',
+        imgCover: 'img/socios/famerate.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    escuincla:{
+        name: 'LA ESCUINCLA Y SU PIOJITO',
+        imgCover: 'img/socios/laescuincleysupiojito.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    magofilms:{
+        name: 'MAGO FILMS',
+        imgCover: 'img/socios/magoproduction.png',
+        description: 'NOS GUSTA LA ANIMACIÓN 3D, SERIE, DOCUMENTALES, CINE, CORTOMETRAJES, DISEÑO, MÚSICA, COMUNICACIÓN. NOS GUSTA EL MOVIMIENTO, LAS PERSONAS CREATIVAS QUE TRABAJAN APASIONADAMENTE Y SON CAPAZ DE APROVECHAR EL MOMENTO. Nos gusta la velocidad, pero no la precipitación. AMAMOS ENCONTRAR UN MOMENTO PARA TOMAR UN DESCANSO, TENER UN CAFÉ E INTERCAMBIAR IDEAS ...</br>'+
+                    'SOMOS LO QUE HACEMOS Y ESO ES LO QUE AMAMOS.',
+        link: 'http://www.magoproduction.com/'
+    },
+    framebyframe:{
+        name: 'FRAME BY FRAME',
+        imgCover: 'img/socios/frame\ by\ frame.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    pcmnormal:{
+        name: 'PCM',
+        imgCover: 'img/socios/pcm.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    },
+    pcmpost:{
+        name: 'PCM POST',
+        imgCover: 'img/socios/pcmpost.png',
+        description: 'PROXIMAMENTE',
+        link: ''
+    }
+}]
+
+
+function showInfoSocios(element, socio) {
+    $(element).addClass("active")
+    $("#socios-modal").find(".link-socios").show()
+    $("#socios-modal").find(".desc-socios").removeClass("proximamente")
+    $("#socios-modal").find(".title-socios").text(arraySocios[0][socio].name)
+    $("#socios-modal").find(".logo-socios").attr("src", arraySocios[0][socio].imgCover)
+    $("#socios-modal").find(".desc-socios").html(arraySocios[0][socio].description)
+    $("#socios-modal").find(".link-socios").attr("href", arraySocios[0][socio].link)
+    if(arraySocios[0][socio].link === ''){
+        $("#socios-modal").find(".link-socios").hide()
+        $("#socios-modal").find(".desc-socios").addClass("proximamente")
+    }
+
+    $("#socios-modal").modal("show")
+}
+
+function hideModalSocios(){
+    $(".socios").find(".banner-socios").removeClass("active")
+    $("#socios-modal").modal("hide")
+}

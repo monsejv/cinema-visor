@@ -13,8 +13,7 @@
 
 <body>
 	<!--Modal Nosotros-->
-	<div class="modal fade bd-example-modal-lg" id="about-us-modal" tabindex="-1" role="dialog"
-		aria-labelledby="about-us-modal" aria-hidden="true">
+	<div class="modal fade bd-example-modal-lg" id="about-us-modal" tabindex="-1" role="dialog" aria-labelledby="about-us-modal" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -166,8 +165,7 @@
 		</div>
 	</div>
 	<!--Modal enfoque-->
-	<div class="modal fade bd-example-modal-lg" id="enfoque-modal" tabindex="-1" role="dialog"
-		aria-labelledby="about-us-modal" aria-hidden="true">
+	<div class="modal fade bd-example-modal-lg" id="enfoque-modal" tabindex="-1" role="dialog" aria-labelledby="about-us-modal" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -242,10 +240,8 @@
 			</div>
 		</div>
 	</div>
-	</div>
 	<!--Modal cartelera-->
-	<div class="modal fade bd-example-modal-lg" id="cartel-modal" tabindex="-1" role="dialog"
-		aria-labelledby="about-us-modal" aria-hidden="true">
+	<div class="modal fade bd-example-modal-lg" id="cartel-modal" tabindex="-1" role="dialog" aria-labelledby="about-us-modal" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -272,6 +268,32 @@
 			</div>
 		</div>
 	</div>
+	<!--Modal socios-->
+	<div class="modal fade bd-example-modal-lg" id="socios-modal" tabindex="-1" role="dialog" aria-labelledby="about-us-modal" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-5">
+								<img src="" class="w-100 logo-socios" alt="">
+							</div>
+							<div class="col-7 text-left">
+								<div class="wrapper-text pad-30">
+									<p class="title-socios"></p>
+									<p class="desc-socios"></p>
+									<div class="link d-inline-flex">
+										<a href="" target="_blank" class="link-socios"><p>Ir > </p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-dark" onclick="hideModalSocios()">
+							< GO BACK</button>
+					</div>
+				</div>
+			</div>
 	</div>
 	<!--Header-->
 	<div class="header primary-element">
@@ -408,7 +430,7 @@
 		</div>
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul>
+			<ul class="principal">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')"><span></span> ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -436,7 +458,7 @@
 	<div class="enfoque primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul class="ocult-all">
+			<ul class="ocult-all texto-borde">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -489,7 +511,7 @@
 	<div class="cartelera primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul class="ocult-all">
+			<ul class="ocult-all texto-borde">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -585,7 +607,7 @@
 	<div class="servicios primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul class="ocult-all">
+			<ul class="ocult-all texto-borde">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -720,7 +742,7 @@
 	<div class="demo primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul class="ocult-all">
+			<ul class="ocult-all texto-borde">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -738,24 +760,13 @@
 						class="icon-scroll">></span></div>
 			</div>
 			<div class="col-sm-10 wrapper-text back-gray">
-				<p class="text-center">ESTE DEMO REEL<br>
-					Encontrar un equilibrio entre la producción de cine comercial y cine de autor,<br>
-					así como también de series para diversos streamings, con la finalidad de convertirnos<br>
-					en una casa productora de prestigio nacional e internacional.<br><br>
-					Misión: Encontrar un equilibrio entre la producción de cine comercial y cine de autor,<br>
-					así como también de series para diversos streamings, con la finalidad de convertirnos<br>
-					en una casa productora de prestigio nacionar e internacional.<br><br>
-					Misión: Encontrar un equilibrio entre la producción de cine comercial y cine de autor,<br>
-					así como también de series para diversos streamings, con la finalidad de convertirnos<br>
-					en una casa productora de prestigio nacionar e internacional.<br><br>
-					Misión: Encontrar un equilibrio entre la producción de cine comercial y cine de autor,<br>
-					así como también de series para diversos streamings, con la finalidad de convertirnos<br>
-					en una casa productora de prestigio nacionar e internacional.<br><br>
-					<span data-toggle="modal" data-target="#about-us-modal">VER ></span>
+				<p class="text-center">En un demo reel </br>podrás encontrar lo mejor de nuestro trabajo ¿Quieres conocerlo?</br>
+					te invitamos a que nos acompañes a ver este extraordinario trabajo.</br>
+					<a href="" target="_blank">VER > </a>
 				</p>
 			</div>
 			<div class="col-sm-1 back-gray">
-				<div class="social-media mr-3 top-20">
+				<div class="social-media mr-3">
 					<a href="#"><span class="share"></span></a>
 					<a href="https://www.facebook.com/Cinema226/" target="_blank">FB
 						<div class="tooltip">
@@ -785,7 +796,7 @@
 	<div class="socios primary-element">
 		<div class="navigation-bar">
 			<span class="icon-cinema"></span>
-			<ul class="ocult-all">
+			<ul class="ocult-all texto-borde">
 				<li class="link" onclick="goSection('.about-us')">NOSOTROS</li>
 				<li class="link" onclick="goSection('.enfoque')">ENFOQUE</li>
 				<li class="link" onclick="goSection('.cartelera')">CARTELERA</li>
@@ -807,15 +818,15 @@
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<div class="row d-inline-grid">
-								<div class="col-sm-4 banner-socios active">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'apapacho')">
 									<div class="logo-socio apapacho"></div>
 									<p>APAPACHO FILMS <span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'bmmaso')">
 									<div class="logo-socio bmmaso"></div>
-									<p>BMMASO ASOCIADOS<span> > </span> </p>
+									<p>BMM & ASOCIADOS<span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'creative')">
 									<div class="logo-socio creative"></div>
 									<p>CREATIVE SPACE <span> > </span> </p>
 								</div>
@@ -823,15 +834,15 @@
 						</div>
 						<div class="carousel-item">
 							<div class="row d-inline-grid">
-								<div class="col-sm-4 banner-socios active">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'chilito')">
 									<div class="logo-socio chilito"></div>
 									<p>EL CHILITO ENMASCARADO <span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'tomatito')"> 
 									<div class="logo-socio tomatito"></div>
 									<p>EL TOMATITO ENMASCARADO<span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'framerate')">
 									<div class="logo-socio framerate"></div>
 									<p>FRAME RATE <span> > </span> </p>
 								</div>
@@ -839,34 +850,34 @@
 						</div>
 						<div class="carousel-item">
 							<div class="row d-inline-grid">
-								<div class="col-sm-4 banner-socios active">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'escuincla')">
 									<div class="logo-socio escuincla"></div>
 									<p>LA ESCUINCLA Y SU PIOJITO<span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'magofilms')">
 									<div class="logo-socio magofilms"></div>
-									<p>MAGO FILMS <span> > </span> </p>
+									<p>MAGO FILMS<span> > </span> </p>
 								</div>
-								<div class="col-sm-4 banner-socios">
-									<div class="logo-socio mago"></div>
-									<p>MAGO PRODUCTIONS<span> > </span> </p>
+								<div class="col-sm-4 banner-socios" onclick="showInfoSocios(this, 'framebyframe')">
+									<div class="logo-socio framebyframe"></div>
+									<p>FRAME BY FRAME<span> > </span> </p>
 								</div>
 							</div>
 						</div>
 						<div class="carousel-item">
 								<div class="row d-inline-grid">
-									<div class="col-sm-4 banner-socios active">
+									<div class="col-sm-6 banner-socios" onclick="showInfoSocios(this, 'pcmnormal')">
 										<div class="logo-socio pcmnormal"></div>
-										<p>PARANORMAL <span> > </span> </p>
+										<p>PCM<span> > </span> </p>
 									</div>
-									<div class="col-sm-4 banner-socios">
+									<div class="col-sm-6 banner-socios" onclick="showInfoSocios(this, 'pcmpost')">
 										<div class="logo-socio pcmpost"></div>
 										<p>PCM POST <span> > </span> </p>
 									</div>
-									<div class="col-sm-4 banner-socios">
+									<!--<div class="col-sm-4 banner-socios">
 										<div class="logo-socio mago"></div>
 										<p>MAGO PRODUCTIONS<span> > </span> </p>
-									</div>
+									</div>-->
 								</div>
 							</div>
 					</div>
