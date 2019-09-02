@@ -112,27 +112,13 @@ function fillModal(indice){
 
 function showModal(){
     $("#about-us-modal").modal("show")
-    setTimeout(function(){
-        $("#about-us-modal").find(".move-left").animate({
-            marginLeft: '0px'
-        }, 'slow')
-        $("#about-us-modal").find(".move-right").animate({
-            marginRight: '0px'
-        }, 'slow')
-    }, 1200)
+    
     
 }
 
 function closeModalEfect(){
     $("#about-us-modal").modal("hide")
-    setTimeout(function(){
-        $("#about-us-modal").find(".move-left").animate({
-            marginLeft: '-100%'
-        }, 'slow')
-        $("#about-us-modal").find(".move-right").animate({
-            marginRight: '100%'
-        }, 'slow')
-    }, 800)
+    
 }
 
 var arraySocios = [{
@@ -228,3 +214,22 @@ function hideModalSocios(){
     $(".socios").find(".banner-socios").removeClass("active")
     $("#socios-modal").modal("hide")
 }
+
+function showVideo(){
+    $("#demo-modal").modal("show")
+    $("#video-demo").get(0).load()
+    $("#video-demo").get(0).play()
+}
+
+function closeDemoReel(){
+    $("#video-demo").get(0).pause()
+    $("#demo-modal").modal("hide")
+}
+
+
+setTimeout(function(){
+    $(".loading").fadeOut("slow")
+    setTimeout(function(){
+        $(".landing-page").fadeIn("slow")
+    },1000)
+},5000)
