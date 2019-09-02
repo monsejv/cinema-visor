@@ -119,7 +119,7 @@ function showModal(){
         $("#about-us-modal").find(".move-right").animate({
             marginRight: '0px'
         }, 'slow')
-    }, 800)
+    }, 1200)
     
 }
 
