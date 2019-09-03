@@ -169,7 +169,7 @@
 						</div>
 						<div class="row">
 							<div class="img-modal back w-100 text-center">
-								<button type="button" class="btn btn-dark" onclick="closeModalEfect()">< GO BACK</button>
+								<button type="button" class="btn btn-dark" onclick="removeEfecto('#about-us-modal')">< GO BACK</button>
 								<div class="scroll parpadea b-middle ml-3 final" onclick="doScrollModal(this, '#about-us-modal')">SCROLL<span
 									class="icon-scroll">></span>
 								</div>
@@ -308,7 +308,7 @@
 					</div>
 				</div>
 				<div class="footer">
-					<button type="button" class="btn btn-dark" data-dismiss="modal">
+					<button type="button" class="btn btn-dark" onclick="removeEfecto('#enfoque-modal')">
 						< GO BACK</button>
 				</div>
 			</div>
@@ -325,7 +325,16 @@
 						</div>
 						<div class="col-7 text-center">
 							<div class="wrapper-text">
-								<h1 class="title-cartel">SINOPSIS</h1>
+								<div class="wrapper-title">
+										<div class="letter efect">S</div>
+										<div class="letter efect">I</div>
+										<div class="letter efect">N</div>
+										<div class="letter efect">O</div>
+										<div class="letter efect">P</div>
+										<div class="letter efect">S</div>
+										<div class="letter efect">I</div>
+										<div class="letter efect">S</div>
+								</div>
 								<p class="sinopsis-cartel"></p>
 								<div class="trailer d-inline-flex">
 									<p class="f-left">Te invitamos a ver el tráiler ></p>
@@ -353,7 +362,7 @@
 							</div>
 							<div class="col-7 text-left">
 								<div class="wrapper-text pad-30">
-									<p class="title-socios"></p>
+									<div class="wrapper-title"></div>
 									<p class="desc-socios"></p>
 									<div class="link d-inline-flex">
 										<a href="" target="_blank" class="link-socios"><p>Ir > </p></a>

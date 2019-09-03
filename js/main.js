@@ -112,8 +112,6 @@ function fillModal(indice){
 
 function showModal(){
     $("#about-us-modal").modal("show")
-    
-    
 }
 
 function closeModalEfect(){
@@ -198,6 +196,16 @@ function showInfoSocios(element, socio) {
     $(element).addClass("active")
     $("#socios-modal").find(".link-socios").show()
     $("#socios-modal").find(".desc-socios").removeClass("proximamente")
+    var name = arraySocios[0][socio].name
+    var splitName = name.split("")
+    console.log(splitName)
+    for(let i in splitName){
+        var appendThis = "<div class='letter efect'>"+ splitName[i] +"</div>";
+        if(splitName[i] == "" || splitName[i] == " "){
+            appendThis = "<div>&nbsp;&nbsp;&nbsp;</div>"
+        }
+        $("#socios-modal").find(".wrapper-title").append(appendThis)
+    }
     $("#socios-modal").find(".title-socios").text(arraySocios[0][socio].name)
     $("#socios-modal").find(".logo-socios").attr("src", arraySocios[0][socio].imgCover)
     $("#socios-modal").find(".desc-socios").html(arraySocios[0][socio].description)
@@ -226,6 +234,11 @@ function closeDemoReel(){
     $("#demo-modal").modal("hide")
 }
 
+function removeEfecto(modal){
+    $(modal).find(".letter").removeClass("efecto")
+    $(modal).modal("hide")
+}
+
 
 setTimeout(function(){
     $(".loading").fadeOut("slow")
@@ -234,3 +247,25 @@ setTimeout(function(){
     },1000)
 },5000)
 
+$(".modal").scroll(function(){
+    if($("#about-us-modal").is(":visible")){
+        scrolled = $("#about-us-modal").scrollTop();
+        if(scrolled > 400 && scrolled < 800){
+            $("#about-us-modal").find(".space").find(".letter").addClass("efect")
+        }else if(scrolled >= 1000){
+            $("#about-us-modal").find(".team").find(".letter").addClass("efect")
+        }
+    }  
+    if($("#enfoque-modal").is(":visible")){
+        scrolled = $("#enfoque-modal").scrollTop();
+        console.log(scrolled)
+        if($(window).width() >= 1024 && $(window).height > 1200){
+            $("#enfoque-modal").find(".letter").addClass("efect")
+        }
+        else{
+            if(scrolled > 250){
+                $("#enfoque-modal").find(".letter").addClass("efect")
+            }
+        }
+    }   
+});
