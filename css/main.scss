@@ -6,7 +6,9 @@
 @font-face { font-family: D-DINExp-Bold; src: url(../fonts/D-DINExp-Bold.otf);}
 @font-face { font-family: D-DINExp-Italic; src: url(../fonts/D-DINExp-Italic.otf);}
 @font-face { font-family: D-DINExp; src: url(../fonts/D-DINExp.otf);}
-
+@font-face { font-family: Arquitecta; src: url('../fonts/Arquitecta\ W00\ Regular.ttf');}
+@font-face { font-family: ArquitectaM; src: url('../fonts/ArquitectaMedium.ttf');}
+@font-face { font-family: ArquitectaBold; src: url('../fonts/ArquitectaBold');}
 
 
 body{
@@ -14,11 +16,11 @@ body{
 	background: #000!important;
 	& p, span, h3, h5, a, li, button {
 		color: #fff;
-		font-family: 'D-DIN';
+		font-family: 'AquitectaM';
 	}
 	h1{
 		color: #fff;
-		font-family: 'D-DIN-Bold';
+		font-family: 'ArquitectaBold';
 	}
 	
 }
@@ -148,7 +150,6 @@ body{
 .enfoque{
 	position: relative;
 	padding: 30px 0px;
-	font-size: 'D-DIN-Bold';
 	.row-enfoque{
 		padding: 0;
 		background-image: url('../img/nuestro\ enfoque.jpg');
@@ -161,6 +162,7 @@ body{
 			width: 100%;
 		}
 		p{
+			font-size: 'AquitectaBold';
 			-webkit-font-smoothing: antialiased !important;
 			position: relative;
 			text-align: center;
@@ -404,7 +406,7 @@ body{
 			width: 153px;
 			top: 14px;
 			display: none;
-			//font-family: serif;
+			font-family: 'ArquitectaM';
 			text-align: left;
 			font-size: 12px;
 		}
@@ -730,6 +732,7 @@ body{
 		background-repeat: no-repeat;
 		height: 100%;
 		background-size: 100%;
+		background-position: bottom;
 	}
 	.scroll{
 		transform: rotate(-90deg);
@@ -970,7 +973,7 @@ body{
 			font-size: 200px;
 			opacity: 0.5;
 			position: absolute;
-			font-family: 'D-DINCondensed-Bold';
+			font-family: 'ArquitectaBold';
 		}
 		p:nth-child(1){
 			top: -30%;
@@ -1140,6 +1143,45 @@ a:hover{
 	}
   }
 
-  .landing-page{
+  .primary-element{
 	  display: none;
+  }
+
+
+
+
+  //Vista tablet
+  @media only screen and (max-width: 1025px) {
+	.header{
+		min-height: 695px;
+	}
+	.navigation-bar{
+		ul{
+			width: 85%;
+			li{
+				font-size: 10px;
+			}
+		}
+	}
+	.social-media{
+		&.mr-3{
+			margin-right: 0px!important;
+		}
+	}
+	.scroll{
+		&.ml-3{
+			margin-left: 0px!important;
+		}
+	}
+	.demo, .socios{
+		height: 65vh;
+	}
+	.contacto{
+		.contacto-image{
+			background-position: bottom;
+		}
+		.created-by{
+			background-position: 76%!important;
+		}
+	}
   }

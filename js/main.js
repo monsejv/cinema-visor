@@ -230,6 +230,7 @@ function closeDemoReel(){
 setTimeout(function(){
     $(".loading").fadeOut("slow")
     setTimeout(function(){
-        $(".landing-page").fadeIn("slow")
+        $(".primary-element").fadeIn("slow")
     },1000)
 },5000)
+
