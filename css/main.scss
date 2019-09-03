@@ -40,21 +40,23 @@ body{
 		z-index: 1;
 		width: 100%;
 		.carousel-control-prev{
-			left: 30%;
+			left: 3.5%;
+			top: 49.8%;
 			z-index: 9999999;
-			display: none;
+			width: 60px;
+			height: 60px;
 			span{
 				background-image: url('../img/left.png');
-				margin-top: 90px;
 			}
 		}
 		.carousel-control-next{
-			right: 26%;
-			z-index: 999999;
-			display: none;
+			left: 32.8%;
+			top: 49.8%;
+			z-index: 9999999;
+			width: 60px;
+			height: 60px;
 			span{
 				background-image: url('../img/right.png');
-				margin-top: 90px;
 			}
 		}
 		.carousel-caption{
@@ -137,8 +139,9 @@ body{
 	.container-fluid{
 		display: flex;
     	position: absolute;
-    	height: 50%;
-    	top: 15%;
+    	height: 40%;
+		top: 13%;
+		z-index: 999;
 	}
 	.scroll{
 		bottom: 50%;
@@ -151,33 +154,30 @@ body{
 .enfoque{
 	position: relative;
 	padding: 30px 0px;
+	perspective: 2px;
 	.row-enfoque{
 		padding: 0;
 		background-image: url('../img/nuestro\ enfoque.jpg');
 		background-size: 100%;
 		background-repeat: no-repeat;
 		height: 560px;
-		transform-style: preserve-3d;
-		transform: translate3d(0px, 56px, 0px);
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		.enfoque-image{
 			width: 100%;
 		}
 		p{
 			font-size: 'AquitectaBold';
-			-webkit-font-smoothing: antialiased !important;
 			position: relative;
 			text-align: center;
 			color: white;
 			line-height: 0.8;
 			margin: auto;
-			margin-top: 19%;
-			transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-			transform-origin: 50% 50% 0px;
-			transition: top 5s;
 			opacity: 1;
-			&.go{
-				font-size: 50px;
-				margin-top: 30px;
+			font-size: 50px;
+			.go{
+				font-size: 40px!important;
 				cursor: pointer;
 			}
 			&.title{
