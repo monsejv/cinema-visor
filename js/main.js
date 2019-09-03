@@ -194,6 +194,7 @@ var arraySocios = [{
 
 function showInfoSocios(element, socio) {
     $(element).addClass("active")
+    $("#socios-modal").find(".wrapper-title").empty()
     $("#socios-modal").find(".link-socios").show()
     $("#socios-modal").find(".desc-socios").removeClass("proximamente")
     var name = arraySocios[0][socio].name
