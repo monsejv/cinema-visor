@@ -236,8 +236,16 @@ function closeDemoReel(){
 }
 
 function removeEfecto(modal){
-    $(modal).find(".letter").removeClass("efecto")
-    $(modal).modal("hide")
+    $("#about-us-modal").find(".space").find(".move-left").animate({
+        marginLeft: '-40%'
+    }, 'slow')
+    $("#about-us-modal").find(".space").find(".move-right").animate({
+        marginLeft: '83%'
+    }, 'slow')
+    $(modal).find(".letter").removeClass("efect")
+    setTimeout(function(){
+        $(modal).modal("hide")
+    }, 1000)
 }
 
 
@@ -252,7 +260,15 @@ $(".modal").scroll(function(){
     if($("#about-us-modal").is(":visible")){
         scrolled = $("#about-us-modal").scrollTop();
         if(scrolled > 400 && scrolled < 800){
-            $("#about-us-modal").find(".space").find(".letter").addClass("efect")
+            $("#about-us-modal").find(".space").find(".move-left").animate({
+                marginLeft: '0px'
+            }, 'xslow')
+            $("#about-us-modal").find(".space").find(".move-right").animate({
+                marginLeft: '0px'
+            }, 'xslow')
+            setTimeout(function(){
+                $("#about-us-modal").find(".space").find(".letter").addClass("efect")
+            }, 1000)
         }else if(scrolled >= 1000){
             $("#about-us-modal").find(".team").find(".letter").addClass("efect")
         }
