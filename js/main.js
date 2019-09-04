@@ -270,4 +270,3 @@ $(".modal").scroll(function(){
         }
     }   
 });
-
