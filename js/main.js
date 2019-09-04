@@ -286,3 +286,14 @@ $(".modal").scroll(function(){
         }
     }   
 });
+
+function playVideo(){
+    $("#video-demo").get(0).play()
+    $(".play").hide()
+    $(".pause").show()
+}
+function pauseVideo(){
+    $("#video-demo").get(0).pause()
+    $(".play").show()
+    $(".pause").hide()
+}
