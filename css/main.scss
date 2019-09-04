@@ -1676,7 +1676,33 @@ a:hover{
 		-10px -30px transparent;
 	}
   }
-
+  
+  
+.controls-video{
+	position: absolute;
+	bottom: 10px;
+	left: 150px;
+	width: 100%;
+	height: 70px;
+	.play{
+		background-image: url('../img/playvideo.png');
+		height: 50px;
+		width: 50px;
+		background-size: contain;
+		background-position: center center;
+		cursor: pointer;
+	}
+	.pause{
+		background-image: url('../img/pausevideo.png');
+		display: none;
+		height: 50px;
+		width: 50px;
+		background-size: contain;
+		background-position: center center;
+		cursor: pointer;
+	}
+}
+  
 .scrollUp{
 	transform: translateY(-20px);
 	opacity: 1;
@@ -1690,3 +1716,4 @@ a:hover{
 	transform-origin: left;
 	transition: all 4s ease;
 }
+

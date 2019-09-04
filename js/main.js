@@ -287,6 +287,17 @@ $(".modal").scroll(function(){
     }   
 });
 
+function playVideo(){
+    $("#video-demo").get(0).play()
+    $(".play").hide()
+    $(".pause").show()
+}
+function pauseVideo(){
+    $("#video-demo").get(0).pause()
+    $(".play").show()
+    $(".pause").hide()
+}
+
 $(window).scroll(function(event) {
 	var scrollTop = $(window).scrollTop();
 	console.log("Vertical "+scrollTop);
@@ -299,5 +310,4 @@ $(window).scroll(function(event) {
         $(".text-nosotros").removeClass("scrollUp")
     }
 });
-
 
