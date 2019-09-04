@@ -1703,4 +1703,17 @@ a:hover{
 	}
 }
   
-    
+.scrollUp{
+	transform: translateY(-20px);
+	opacity: 1;
+	transform-origin: left;
+	transition: all 2s ease;
+}
+
+.scrollDown { 
+	transform: translateY(20px);
+	opacity: 1;
+	transform-origin: left;
+	transition: all 2s ease;
+}
+

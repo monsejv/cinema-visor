@@ -297,3 +297,17 @@ function pauseVideo(){
     $(".play").show()
     $(".pause").hide()
 }
+
+$(window).scroll(function(event) {
+	var scrollTop = $(window).scrollTop();
+	console.log("Vertical "+scrollTop);
+    let topNosotros =  $(window).scrollTop();
+    if(topNosotros >= 1142 && topNosotros <= 1324){
+        $(".text-nosotros").addClass("scrollUp")
+        $(".text-nosotros").removeClass("scrollDown")
+    } else if(topNosotros >= 489 && topNosotros <= 1142){
+        $(".text-nosotros").addClass("scrollDown")
+        $(".text-nosotros").removeClass("scrollUp")
+    }
+});
+
