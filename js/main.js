@@ -311,3 +311,6 @@ $(window).scroll(function(event) {
     }
 });
 
+function restoreForm(){
+    $("input").val("")
+}
