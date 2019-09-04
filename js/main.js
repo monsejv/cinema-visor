@@ -299,15 +299,25 @@ function pauseVideo(){
 }
 
 $(window).scroll(function(event) {
-	var scrollTop = $(window).scrollTop();
-	console.log("Vertical "+scrollTop);
-    let topNosotros =  $(window).scrollTop();
-    if(topNosotros >= 1142 && topNosotros <= 1324){
+    let scrollTop =  $(window).scrollTop();
+	console.log("Vertical "+ scrollTop);
+    if(scrollTop >= 1142 && scrollTop <= 1324){
         $(".text-nosotros").addClass("scrollUp")
         $(".text-nosotros").removeClass("scrollDown")
-    } else if(topNosotros >= 489 && topNosotros <= 1142){
+    } else if(scrollTop >= 489 && scrollTop <= 1142){
         $(".text-nosotros").addClass("scrollDown")
         $(".text-nosotros").removeClass("scrollUp")
     }
 });
 
+
+$(window).scroll(function(event) {
+    let scrollTop =  $(window).scrollTop();
+    if(scrollTop >= 1808 && scrollTop <= 1982){
+        $(".enfoque .title").addClass("scrollUpEnfoque")
+        $(".enfoque .title").removeClass("scrollDownEnfoque")
+    } else if(scrollTop >= 1155 && scrollTop <= 1809){
+        $(".enfoque .title").addClass("scrollDownEnfoque")
+        $(".enfoque .title").removeClass("scrollUpEnfoque")
+    }
+});
