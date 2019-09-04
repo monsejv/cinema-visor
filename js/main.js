@@ -310,7 +310,6 @@ $(window).scroll(function(event) {
     }
 });
 
-
 $(window).scroll(function(event) {
     let scrollTop =  $(window).scrollTop();
     if(scrollTop >= 1808 && scrollTop <= 1982){
@@ -321,3 +320,7 @@ $(window).scroll(function(event) {
         $(".enfoque .title").removeClass("scrollUpEnfoque")
     }
 });
+
+function restoreForm(){
+    $("input").val("")
+}
