@@ -1,14 +1,26 @@
 function toggleMenu (menu){
-    var statusMenu = $(menu).closest("ul").hasClass("ocult-all")
-    if(statusMenu){
-        $(menu).closest("ul").removeClass("ocult-all")
+    if($(window).width() > 576){
+        var statusMenu = $(menu).closest("ul").hasClass("ocult-all")
+        if(statusMenu){
+            $(menu).closest("ul").removeClass("ocult-all")
+        }
+        else{
+            $(menu).closest("ul").addClass("ocult-all")
+        }
     }
     else{
-        $(menu).closest("ul").addClass("ocult-all")
+        if($(".menu-mobile").is(":visible")){
+            $(".menu-mobile").fadeOut("slow")
+        }
+        else{
+            $(".menu-mobile").fadeIn("slow")
+        }
     }
+    
 }
 
 function goSection (id){
+    $(".menu-mobile").fadeOut("fast")
     $('html,body').animate({
         scrollTop: $(id).offset().top
     }, 'slow')
@@ -299,8 +311,8 @@ function pauseVideo(){
 }
 
 $(window).scroll(function(event) {
-    let scrollTop =  $(window).scrollTop();
-	console.log("Vertical "+ scrollTop);
+    var scrollTop =  $(window).scrollTop();
+    console.log(scrollTop)
     if(scrollTop >= 1142 && scrollTop <= 1324){
         $(".text-nosotros").addClass("scrollUp")
         $(".text-nosotros").removeClass("scrollDown")
@@ -308,16 +320,18 @@ $(window).scroll(function(event) {
         $(".text-nosotros").addClass("scrollDown")
         $(".text-nosotros").removeClass("scrollUp")
     }
-});
-
-$(window).scroll(function(event) {
-    let scrollTop =  $(window).scrollTop();
     if(scrollTop >= 1808 && scrollTop <= 1982){
         $(".enfoque .title").addClass("scrollUpEnfoque")
         $(".enfoque .title").removeClass("scrollDownEnfoque")
     } else if(scrollTop >= 1155 && scrollTop <= 1809){
         $(".enfoque .title").addClass("scrollDownEnfoque")
         $(".enfoque .title").removeClass("scrollUpEnfoque")
+    }
+    var demo = $(".demo").offset().top
+    if(scrollTop > 4429 && scrollTop < 4500){
+        $(".back-gray").animate({
+            right: '0px'
+        },5000)
     }
 });
 
