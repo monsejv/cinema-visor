@@ -700,7 +700,7 @@ body{
 		}
 		.scroll{
 			&.final{
-				transform: rotate(-90deg);
+				transform: rotate(-180deg);
 			}
 		}
 	}
@@ -1759,7 +1759,7 @@ a:hover{
 		}
 	}
 	.header{
-		min-height: 110vh;
+		min-height: 120vh;
 		.bd-example{
 			.carousel-control-prev, .carousel-control-next{
 				display: none;

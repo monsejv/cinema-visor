@@ -51,7 +51,7 @@ appendParticles()
 
 var arrayMovies = [{
     indice1:{
-        cover: 'img/traicioncartel.jpg',
+        cover: 'img/traicioncartelweb.png',
         sinopsis: 'Las fracturas familiares entre Félix y su hija Misela, forjadas incluso antes de su nacimiento. El temperamento impetuoso de ambos provoca que los rencores del pasado y su travesía personal a lo largo de atropelladas vidas moldeé una enfermiza y latente sospecha mutua, '+
         'la cual explota en una tarde nublada mientras los dos dan un paseo por un terreno roco.',
         youtube: 'https://www.youtube.com/watch?v=0t1hjyeyxqg'
@@ -97,7 +97,7 @@ var arrayMovies = [{
         youtube: 'https://www.youtube.com/watch?v=pCzdfCSs8II&t=19s'
     },
     indice9:{
-        cover: 'img/cambiocartelweb.png',
+        cover: 'img/lavenjanzadejairocartel.jpg',
         sinopsis: 'Jairo José Panilla Téllez (Cali, Colombia, 1944) es el padre del terror el suspenso y la ciencia ficción en Colombia, director entre otras, de películas como 27 horas con la muerte o Funeral Sinestro, que fueron un ícono y un éxito de taquilla por allá por los años 70 y 80 '+
         'Fue el primero en introducir efectos especiales en una película colombiana y ahora, con más de 70 años, está empeñado en sacar adelante su última película: la primera en 3D por fuera de la animación. Llevará por título El espiritu de la muerte. Él mismo, en su casa, se encarga de todos estos efectos, '+
         'trabajándolos, muchas veces de forma astesanal en el proceso de edición. Con entrevistas y fragmentos de películas, se arma este entrañable documental que sigue los pasos de quien, sin duda, es un personake en la historia del cine colombiano, cuya labor bien merece este homenaje.',
