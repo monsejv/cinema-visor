@@ -1759,13 +1759,13 @@ a:hover{
 		}
 	}
 	.header{
-		min-height: 115vh;
+		min-height: 110vh;
 		.bd-example{
 			.carousel-control-prev, .carousel-control-next{
 				display: none;
 			}
 			img{
-				min-height: 745px;
+				min-height: 700px;
 			}
 			.carousel-caption{
 				bottom: 0px;
@@ -1774,7 +1774,7 @@ a:hover{
 					font-size: 14px;
 					bottom: 84px;
 					&.movie{
-						bottom: 53px;
+						bottom: 50px;
 						font-size: 12px;
 					}
 					&.amazon{
@@ -2027,6 +2027,9 @@ a:hover{
 				&.section-years{
 					margin-left: 0%
 				}
+				.move-left, .move-right{
+					margin-left: 0px!important;
+				}
 			}
 			.back{
 				height: 33vh;
@@ -2039,7 +2042,7 @@ a:hover{
 				margin-left: 0px;
 			}
 			.section-years{
-				height: 33vh;
+				height: 38vh;
 			}
 		}
 	}
@@ -2080,5 +2083,14 @@ a:hover{
 				left: 46px !important;
 			}
 		}	
+	}
+}
+
+.modal{
+	.modal-dialog{
+		height: 100%;
+	}
+	h1{
+		letter-spacing: 0px!important;
 	}
 }
