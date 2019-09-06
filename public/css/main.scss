@@ -1991,4 +1991,36 @@ a:hover{
 			}
 		}
 	}
+	#about-us-modal{
+		.modal-content{
+			.story{
+				height: 33vh;
+			}
+			.icon-us{
+				font-size: 35px;
+				height: auto;
+			}
+			.space{
+				height: aut;
+				&.section-years{
+					margin-left: 0%
+				}
+			}
+			.back{
+				height: 33vh;
+			}
+			.scroll{
+				left: -25px;
+				top: 130px;
+			}
+			.early-years{
+				margin-left: 0px;
+			}
+		}
+	}
+	#enfoque-modal{
+		.desc{
+			line-height: 50px;
+		}
+	}
 }

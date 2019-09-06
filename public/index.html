@@ -20,10 +20,10 @@
 					<div class="container-fluid">
 						<div class="img-modal primary-element story">
 							<div class="icon-us">THE STORY BEGINS</div>
-							<div class="scroll d-none d-sm-block parpadea b-middle ml-3" onclick="doScrollModal(this, '#about-us-modal')">SCROLL<span
+							<div class="scroll parpadea b-middle ml-3" onclick="doScrollModal(this, '#about-us-modal')">SCROLL<span
 								class="icon-scroll">></span>
 							</div>
-							<div class="social-media mr-3 top-20">
+							<div class="social-media mr-3 top-20 d-none d-sm-block">
 								<a href="#"><span class="share"></span></a>
 								<a href="https://www.facebook.com/Cinema226/" target="_blank">FB
 									<div class="tooltip">
@@ -49,12 +49,13 @@
 						</div>
 						<div class="row space">
 							<div class="col-sm-6 move-left">
-								<img src="img/nosotros.jpg" alt="">
+								<img class="d-none d-sm-block" src="img/nosotros.jpg" alt="">
+								<img class="d-block d-sm-none" src="img/nosotrosMobile.png" alt="">
 								<p>Adrian Bazan (CEO & FOUNDING)<br>
 									Sam Guillen (GENERAL DIRECTOR AND COFUNDER)
 								</p>
 							</div>
-							<div class="col-sm-6 move-right">
+							<div class="col-sm-6 move-right d-none d-sm-block">
 								<h1 class="text-right mt-3">
 									<div class="wrapper-title">
 										<div class="letter">N</div>
@@ -68,21 +69,23 @@
 									</div>
 								</h1>
 								<p class="text-justify">
-									<span class="font-weight-bold">Cinema226 </span>es una de las casas productoras de
-									contenido audiovisual más prometedoras de México.<br><br>
-									Tiene hoy en desarrollo una veinten de películas y media de docena de series, con un
-									sensible equilibrio entre la <span class="font-weight-bold">
-										visión comercial, el perfil alternativo y el sello autorial que demanda el
-										dinámico mercado audiovisual.</span><br><br>
-									Nuestra historia empieza en <span class="font-weight-bold">2013</span>, cuando
-									<span class="font-weight-bold">(Sam Guillen) (pequeño suceso de la inspiración para
-										crear la empresa) </span>
-									para crear lo que hoy en día conocomemos como<br>
-									<span class="font-weight-bold">Cinema226</span>.<br><br>
-									Basamos nuestro nombre en el estímulo fiscal que rescató a la industria
-									cinematográfica:<br>
-									<span class="font-weight-bold">(Art. 226 de la Ley del Impuesto sobre la Renta.
-										)</span>
+									Nuestra historia empieza en 2013, cuando Samantha Guillén y Adrián Bazán se juntan para crear lo que
+									hoy en día conocemos como <span class="font-weight-bold">Cinema226.</span><br><br>
+									Basamos nuestro nombre en el estímulo fiscal que rescató a la industria cinematográfica:<br>
+									<span class="font-weight-bold">Art. 226 de la Ley del Impuesto sobre la Renta.</span><br><br>
+									En 2017 se unen en un sueño común, siete casas productoras con la idea de hacer frente a las necesidades
+									del mercado audiovisual actual, cada una de ellas con enfoques y trayectorias diferentes, pero complementarias
+									que, al juntarse crearon un grupo fuerte y competitivo para el mercado audiovisual.
+								</p>
+							</div>
+							<div class="col-sm-6 move-right d-block d-sm-none">
+								<p class="text-right">NOSOTROS</p>
+								<p class="text-left">
+										<span class="font-weight-bold">Cinema226.</span> es una de las casas productoras de contenido audiovisual
+										más prometedoras de México.<br><br>
+										Tiene hoy en desarrollo una veinten de películas y media de docena de series, con un sensible
+										equilibrio entre la visión comercial, el perfil alternativo y el sello autorial que demanda el 
+										dinámico mercado audiovisual.
 								</p>
 							</div>
 						</div>
@@ -91,8 +94,8 @@
 								<div class="scroll d-none d-sm-block parpadea b-middle ml-3" onclick="doScrollModal(this, '#about-us-modal')">SCROLL<span
 										class="icon-scroll">></span>
 								</div>
-								<div class="early-years">
-									<h1>
+								<div class="early-years ">
+									<h1 class="d-none d-sm-block">
 										<div class="wrapper-title">
 											<div class="letter">P</div>
 											<div class="letter">R</div>
@@ -109,23 +112,21 @@
 											<div class="letter">S</div>
 										</div>
 									</h1>
+									<p class="d-block d-sm-none">PRIMEROS AÑOS</p>
 									<p class="text-justify">Se unen en un sueño común, siete casas productoras con la
-										idea de hacer frente a las necesidades
-										del mercado audiovisual actual, cada una de ellas con enfoques y trayectorias
-										diferentes,
-										pero complementarias que, al juntarse <span class="font-weight-bold">crearon un
-											grupo fuerte
-											y competitivo para el mercado audiovisual.</span>
+										idea de hacer frente a las necesidades del mercado audiovisual actual, cada una de ellas 
+										con enfoques y trayectorias	diferentes,pero complementarias que, al juntarse 
+										<span class="font-weight-bold">crearon un grupo fuerte y competitivo para el mercado audiovisual.</span>
 									</p>
 								</div>
 							</div>
-							<div class="col-sm-6 move-right">
+							<div class="col-sm-6 move-right d-none d-sm-block">
 								<div class="years">
 									<p>2017</p>
 									<p>2018</p>
 									<p>2019</p>
 								</div>
-								<div class="social-media mr-3">
+								<div class="social-media mr-3 d-none d-sm-block">
 									<a href="#"><span class="share"></span></a>
 									<a href="https://www.facebook.com/Cinema226/" target="_blank">FB
 										<div class="tooltip">
@@ -233,42 +234,9 @@
 							</div>
 						</div>
 						<div class="row space">
-							<div class="col-sm-6">
+							<div class="col-sm-6 d-sm-block d-none">
 								<h1 class="title-enfoque">
-									<div class="wrapper-title">
-										<div class="letter">N</div>
-										<div class="letter">U</div>
-										<div class="letter">E</div>
-										<div class="letter">S</div>
-										<div class="letter">T</div>
-										<div class="letter">R</div>
-										<div class="letter">O</div>
-										<div>&nbsp;</div>
-										<div class="letter">P</div>
-										<div class="letter">R</div>
-										<div class="letter">E</div>
-										<div class="letter">S</div>
-										<div class="letter">E</div>
-										<div class="letter">N</div>
-										<div class="letter">T</div>
-										<div class="letter">E</div>
-									</div>
-								</h1>
-								<!--<h3 class="gray second">03/</h3>-->
-							</div>
-							<div class="col-sm-6">
-								<p class="desc">Cinema226 tiene hoy en desarrollo una veintena de películas y media docena de series, con
-										historias originales y provocativas. Con ellas intentamos mantener un sensible equilibrio entre la
-										visión comercial que debe tener una compañía de contenidos que pretende mantenerse en el
-										tiempo, y ese sello artístico y de calidad que el público demanda, y con el cual queremos
-										identiﬁcarnos. Para nosotros, “prestigio” es la palabra clave.
-								</p>
-							</div>
-						</div>
-						<div class="row space">
-							<div class="col-sm-6">
-								<h1 class="title-enfoque">
-									<div class="wrapper-title">
+									<div class="wrapper-title ">
 										<div class="letter">N</div>
 										<div class="letter">U</div>
 										<div class="letter">E</div>
@@ -287,15 +255,17 @@
 								</h1>
 								<!--<h3 class="gray second">04/</h3>-->
 							</div>
-							<div class="col-sm-6">
-								<p class="desc">Buscamos encontrar un equilibrio entre la producción de cine comercial y cine de autor, así como
-										también de series para las diversas plataformas de streamings, con la ﬁnalidad de convertirnos en
-										una de las principales casas productoras de la región.
+							<div class="col-sm-6 col-12">
+								<p class="d-block d-sm-none">NUESTRA MISIÓN</p>
+								<p class="desc">Buscamos encontrar un equilibrio entre la producción de cine 
+									comercial y cine de autor, así como también de series para las diversas 
+									plataformas de streamings, con la ﬁnalidad de convertirnos en una de las
+									principales casas productoras de la región.
 								</p>
 							</div>
 						</div>
 						<div class="row space">
-							<div class="col-sm-6">
+							<div class="col-sm-6 d-sm-block d-none">
 								<h1 class="title-enfoque">
 									<div class="wrapper-title">
 										<div class="letter">N</div>
@@ -316,12 +286,15 @@
 								</h1>
 								<!--<h3 class="gray second">05/</h3>-->
 							</div>
-							<div class="col-sm-6">
-								<p class="desc">El cine y la industria del entretenimiento están cambiando permanentemente, y nosotros
-										queremos ser parte de ese cambio. Tenemos la experiencia y el talento necesarios para eso. Por
-										tanto, nuestro mayor reto es estar a la vanguardia del contenido, para producir contenido
-										innovador, audaz e inteligente, alineados a las nuevas tendencias de consumo del espectador, que
-										todo el tiempo está buscando aquello que lo sorprenda y lo saque de su zona de confort.
+							<div class="col-sm-6 col-12">
+								<p class="d-block d-sm-none">NUESTRA VISIÓN</p>
+								<p class="desc">El cine y la industria del entretenimiento están cambiando
+									permanentemente, y nosotros queremos ser parte de ese cambio. Tenemos la
+									experiencia y el talento necesarios para eso. Por tanto, nuestro mayor 
+									reto es estar a la vanguardia del contenido, para producir contenido 
+									innovador, audaz e inteligente, alineados a las nuevas tendencias de consumo
+									del espectador, que todo el tiempo está buscando aquello que lo sorprenda y 
+									lo saque de su zona de confort.
 								</p>
 							</div>
 						</div>
