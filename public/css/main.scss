@@ -2019,8 +2019,37 @@ a:hover{
 		}
 	}
 	#enfoque-modal{
-		.desc{
-			line-height: 50px;
+		.modal-body{
+			.desc{
+				line-height: 50px;
+			}
+			.footer{
+				height: 10vh;
+			}
 		}
+	}
+	#cartel-modal{
+		.modal-body{
+			.wrapper-text{
+				padding: 0px 30px 30px 30px;
+				.sinopsis-cartel{
+					line-height: 3.5;
+					text-align: justify;
+				}
+			}
+		}
+	}
+	#socios-modal{
+		.wrapper-text{
+			.desc-socios{
+				text-align: justify;
+				&.proximamente{
+					font-size: 35px !important;
+				}
+			}
+			.link{
+				left: 46px !important;
+			}
+		}	
 	}
 }
