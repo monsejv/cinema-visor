@@ -360,24 +360,6 @@ body{
 				left: -1px;
 			}
 		}
-		.carousel-control-prev{
-			width: 50px;
-			height: 50px;
-			top: 63%;
-			position: absolute;
-			left: 44%;
-		}
-		.carousel-control-next{
-			width: 50px;
-			height: 50px;
-			top: 63%;
-			position: absolute;
-			right: 44%;
-		}
-		.carousel-control-next-icon, .carousel-control-prev-icon{
-			width: 12px;
-			height: 12px;
-		}
 		.move-left{
 			margin-left: -30%;
 			animation-name: unirA;
@@ -1734,6 +1716,9 @@ a:hover{
 	h1{
 		font-size: 16px;
 	}
+	.block-mobile{
+		display: block!important;
+	}
 	.scroll{
 		background-size: 250%!important;
 		&.ml-3{
@@ -1842,12 +1827,14 @@ a:hover{
 	}
 	.about-us{
 		width: 65%;
-		padding: 10px 0px;
+		padding: 0px 0px;
 		text-align: center;
-		height: 75vh;
+		height: auto;
+		margin-bottom: 50px;
 	}
 	.enfoque{
-		height: 75vh;
+		height: auto;
+    	margin-bottom: 50px;
 		.row-enfoque{
 			height: 215px;
 			background-size: 95%;
@@ -1863,7 +1850,8 @@ a:hover{
 		}
 	}
 	.cartelera{
-		height: 150vh;
+		height: auto;
+    	margin-bottom: 50px;
 		.wrapper-card{
 			padding-left: 10px;
 			.card-image{
@@ -1882,7 +1870,8 @@ a:hover{
 		}
 	}
 	.demo{
-		height: 58vh;
+		height: auto;
+    	margin-bottom: 40px;
 		h1{
 			margin: 0px;
 		}
@@ -1910,28 +1899,28 @@ a:hover{
 		}
 	}
 	.servicios{
-		height: 75vh;
+		height: 90vh;
 		.services-image{
 			display: flow-root;
 			.servicio-card{
-				display: inline-grid;	
-				width: 28%;
-				height: 30%;
+				display: inline-grid;
+				width: 40%;
+				height: 32%;
 				position: relative;
-				margin: 5px;
+				margin: 0px 75px;
 			}
 			.services{
 				width: 100%;
-				height: 90px;
+				height: 142px;
 				background-position: center;
 				background-size: 358%;
-				margin-left: 0px;
-				margin-right: 0px;
+				margin-left: 0PX;
+				margin-right: 0PX;
 				margin-bottom: 70px;
 			}
 			.title{
 				position: absolute;
-				top: 67%;
+				top: 60%;
 				font-size: 12px;
 				margin: auto;
 				left: 0px;
@@ -1942,9 +1931,18 @@ a:hover{
 		.social-media{
 			bottom: 10px;
 		}
+		.carousel{
+			.d-inline-grid{
+				display: grid;
+			}
+			.carousel-control-next, .carousel-control-prev{
+				top: 215px;
+			}
+		}
 	}
 	.socios{
-		height: 112vh;
+		height: auto;
+		margin-bottom: 40px;
 		h1{
 			margin: 0px;
 		}
@@ -2025,7 +2023,8 @@ a:hover{
 			.space{
 				height: auto;
 				&.section-years{
-					margin-left: 0%
+					margin-left: 0%;
+					height: auto;
 				}
 				.move-left, .move-right{
 					margin-left: 0px!important;
@@ -2067,6 +2066,11 @@ a:hover{
 				.sinopsis-cartel{
 					line-height: 3.5;
 					text-align: justify;
+				}
+				.youtube{
+					display: block;
+					width: 100%;
+					bottom: -40px;
 				}
 			}
 		}

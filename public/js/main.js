@@ -211,7 +211,6 @@ function showInfoSocios(element, socio) {
     $("#socios-modal").find(".desc-socios").removeClass("proximamente")
     var name = arraySocios[0][socio].name
     var splitName = name.split("")
-    console.log(splitName)
     for(let i in splitName){
         var appendThis = "<div class='letter efect'>"+ splitName[i] +"</div>";
         if(splitName[i] == "" || splitName[i] == " "){
@@ -287,7 +286,6 @@ $(".modal").scroll(function(){
     }  
     if($("#enfoque-modal").is(":visible")){
         scrolled = $("#enfoque-modal").scrollTop();
-        console.log(scrolled)
         if($(window).width() >= 1024 && $(window).height > 1200){
             $("#enfoque-modal").find(".letter").addClass("efect")
         }
@@ -312,7 +310,6 @@ function pauseVideo(){
 
 $(window).scroll(function(event) {
     var scrollTop =  $(window).scrollTop();
-    console.log(scrollTop)
     if(scrollTop >= 1142 && scrollTop <= 1324){
         $(".text-nosotros").addClass("scrollUp")
         $(".text-nosotros").removeClass("scrollDown")
@@ -338,3 +335,20 @@ $(window).scroll(function(event) {
 function restoreForm(){
     $("input").val("")
 }
+
+
+$(".carousel").on("touchstart", function(event){ 
+    var xClick = event.originalEvent.touches[0].pageX; 
+    $(this).one("touchmove", function(event){ 
+        var xMove = event.originalEvent.touches[0].pageX; 
+        if( Math.floor(xClick - xMove) > 5 ){ 
+            $(this).carousel('next'); 
+        } 
+        else if( Math.floor(xClick - xMove) < -5 ){ 
+            $(this).carousel('prev'); 
+        } 
+    }); 
+    $(".carousel").on("touchend", function(){ 
+        $(this).off("touchmove"); 
+    }); 
+});
