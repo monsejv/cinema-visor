@@ -2065,7 +2065,7 @@ a:hover{
 				padding: 0px 30px 30px 30px;
 				.sinopsis-cartel{
 					line-height: 3.5;
-					text-align: justify;
+					text-align: left;
 				}
 				.youtube{
 					display: block;
@@ -2078,7 +2078,7 @@ a:hover{
 	#socios-modal{
 		.wrapper-text{
 			.desc-socios{
-				text-align: justify;
+				text-align: left;
 				&.proximamente{
 					font-size: 35px !important;
 				}
