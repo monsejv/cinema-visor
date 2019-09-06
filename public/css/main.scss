@@ -2023,7 +2023,7 @@ a:hover{
 				height: auto;
 			}
 			.space{
-				height: aut;
+				height: auto;
 				&.section-years{
 					margin-left: 0%
 				}
@@ -2038,6 +2038,9 @@ a:hover{
 			.early-years{
 				margin-left: 0px;
 			}
+			.section-years{
+				height: 33vh;
+			}
 		}
 	}
 	#enfoque-modal{
@@ -2047,6 +2050,10 @@ a:hover{
 			}
 			.footer{
 				height: 10vh;
+			}
+			.title-mobile{
+				font-family: 'twecenBold';
+				font-size: 14px;
 			}
 		}
 	}
