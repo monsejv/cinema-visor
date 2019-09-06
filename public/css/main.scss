@@ -24,7 +24,7 @@ body{
 	overflow-x: hidden;
 	& p, span, h3, h5, a, li, button {
 		color: #fff;
-		font-family: 'twecenLight';
+		font-family: 'twecenRegular';
 		letter-spacing: 4px;
 		
 	}
@@ -1729,7 +1729,7 @@ a:hover{
 
 @media only screen and (max-width: 576px) {
 	p{
-		font-size: 11px;
+		font-size: 12px;
 	}
 	h1{
 		font-size: 16px;
@@ -1779,7 +1779,7 @@ a:hover{
 					}
 					&.amazon{
 						bottom: 33px;
-						font-size: 11px;
+						font-size: 12px;
 					}
 				}
 			}
@@ -1812,7 +1812,7 @@ a:hover{
 	.social-media{
 		a{
 			padding: 6px 13px;
-			font-size: 11px;
+			font-size: 12px;
 			.share{
 				display: none;
 			}
@@ -1927,12 +1927,12 @@ a:hover{
 				background-size: 358%;
 				margin-left: 0px;
 				margin-right: 0px;
+				margin-bottom: 70px;
 			}
 			.title{
-				display: none;
 				position: absolute;
-				top: 48%;
-				font-size: 8px;
+				top: 67%;
+				font-size: 12px;
 				margin: auto;
 				left: 0px;
 				right: 0;
@@ -1980,7 +1980,7 @@ a:hover{
 			margin-top: 0px!important;
 		}
 		p{
-			font-size: 11px;
+			font-size: 12px;
 		}
 		.col-10{
 			padding-left: 42px;
@@ -2001,7 +2001,7 @@ a:hover{
 		.form-group{
 			input{
 				width: 55%;
-				font-size: 11px;
+				font-size: 12px;
 			}
 		}
 		.redes{
@@ -2042,7 +2042,7 @@ a:hover{
 				margin-left: 0px;
 			}
 			.section-years{
-				height: 38vh;
+				height: 70vh;
 			}
 		}
 	}

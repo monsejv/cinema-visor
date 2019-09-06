@@ -87,7 +87,7 @@ var arrayMovies = [{
     },
     indice7:{
         cover: 'img/corajecartel.jpg',
-        sinopsis: 'PROXIMAMENTE',
+        sinopsis: 'PRÓXIMAMENTE',
         youtube: ''
     },
     indice8:{
@@ -142,13 +142,13 @@ var arraySocios = [{
     bmmaso:{
         name: 'BMM & ASOCIADOS',
         imgCover: 'img/socios/bmmyasociados.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     creative:{
         name: 'CREATIVE SPACE',
         imgCover: 'img/socios/creativespace.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     chilito:{
@@ -161,19 +161,19 @@ var arraySocios = [{
     tomatito:{
         name: 'EL TOMATITO ENMASCARADO',
         imgCover: 'img/socios/eltomatitioenmascarado.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     framerate:{
         name: 'FRAME RATE',
         imgCover: 'img/socios/famerate.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     escuincla:{
         name: 'LA ESCUINCLA Y SU PIOJITO',
         imgCover: 'img/socios/laescuincleysupiojito.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     magofilms:{
@@ -186,19 +186,19 @@ var arraySocios = [{
     framebyframe:{
         name: 'FRAME BY FRAME',
         imgCover: 'img/socios/frame\ by\ frame.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     pcmnormal:{
         name: 'PCM',
         imgCover: 'img/socios/pcm.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     },
     pcmpost:{
         name: 'PCM POST',
         imgCover: 'img/socios/pcmpost.png',
-        description: 'PROXIMAMENTE',
+        description: 'PRÓXIMAMENTE',
         link: ''
     }
 }]
