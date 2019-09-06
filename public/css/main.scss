@@ -488,7 +488,7 @@ body{
 			background-image: url('../img/AZULTWITTER.svg');
 			background-size: contain;
 			background-repeat: no-repeat;
-			background-position: 16px 0px;
+			background-position: 19px 0px;
 			color: white;
 			text-decoration: none;
 			text-align: center;
@@ -2069,8 +2069,8 @@ a:hover{
 				}
 				.youtube{
 					display: block;
-					width: 100%;
-					bottom: -40px;
+					width: 100%!important;
+					bottom: -40px!important;
 				}
 			}
 		}
