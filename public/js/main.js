@@ -97,7 +97,7 @@ var arrayMovies = [{
         youtube: 'https://www.youtube.com/watch?v=pCzdfCSs8II&t=19s'
     },
     indice9:{
-        cover: 'img/lavenjanzadejairocartel.jpg',
+        cover: 'img/cambiocartelweb.png',
         sinopsis: 'Jairo José Panilla Téllez (Cali, Colombia, 1944) es el padre del terror el suspenso y la ciencia ficción en Colombia, director entre otras, de películas como 27 horas con la muerte o Funeral Sinestro, que fueron un ícono y un éxito de taquilla por allá por los años 70 y 80 '+
         'Fue el primero en introducir efectos especiales en una película colombiana y ahora, con más de 70 años, está empeñado en sacar adelante su última película: la primera en 3D por fuera de la animación. Llevará por título El espiritu de la muerte. Él mismo, en su casa, se encarga de todos estos efectos, '+
         'trabajándolos, muchas veces de forma astesanal en el proceso de edición. Con entrevistas y fragmentos de películas, se arma este entrañable documental que sigue los pasos de quien, sin duda, es un personake en la historia del cine colombiano, cuya labor bien merece este homenaje.',
